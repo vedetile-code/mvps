@@ -41,7 +41,12 @@
     }
 
     if (reduce) return;
+    // Wait for web fonts (max 1.2 s) so text does not reflow while it animates in.
+    var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+    Promise.race([fontsReady, new Promise(function (r) { setTimeout(r, 1200); })]).then(start);
+  });
 
+  function start() {
     // Word-by-word headings
     Array.prototype.forEach.call(document.querySelectorAll("[data-words]"), function (el) {
       var i = 0;
@@ -87,5 +92,5 @@
         el.style.setProperty("--my", (e.clientY - r.top) + "px");
       }, { passive: true });
     }
-  });
+  }
 })();
