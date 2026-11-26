@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#dccdb8"/>
+  
+  <ellipse cx="320" cy="760" rx="200" ry="20" fill="#000" opacity="0.1"/>
+  <path d="M215 78 H425 L414 128 H226 Z" fill="#2f4f6f"/>
+  <rect x="300" y="96" width="40" height="22" rx="3" fill="#c9a227"/>
+  <text x="320" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#3a2a10">501</text>
+  <path d="M226 128 C200 360 198 560 198 710 L298 722 C304 420 310 250 318 128 Z" fill="#3e6588"/>
+  <path d="M414 128 C440 360 442 560 442 710 L342 722 C336 420 330 250 322 128 Z" fill="#4a7196"/>
+  <rect x="236" y="160" width="70" height="80" rx="4" fill="#355873"/>
+  <rect x="334" y="160" width="70" height="80" rx="4" fill="#3d6284"/>
+  <path d="M236 160 h70 v20 h-70 z" fill="#2f4f6f" opacity="0.5"/>
+  <path d="M334 160 h70 v20 h-70 z" fill="#2f4f6f" opacity="0.5"/>
+  <path d="M198 710 L298 722 L294 742 L202 728 Z" fill="#d7c4a6"/>
+  <path d="M442 710 L342 722 L346 742 L438 728 Z" fill="#d7c4a6"/>
+  <path d="M198 710 L210 730" stroke="#8a6a4a" stroke-width="2" fill="none"/>
+  <text x="320" y="400" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#1a2a3a" opacity="0.45">Levi's 501 · back · light hem wear</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

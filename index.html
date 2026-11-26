@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five consumer demo sites</title>
+  <meta name="description" content="Static, demo-only previews of five consumer tools. No payments are taken on these pages, and no API keys are used in the public demos.">
+  <style>
+    :root { --ink: #1c1a16; --muted: #5c574e; --paper: #f3eee4; --card: #fffdf8; --line: rgba(28,26,22,.14); --accent: #9a3f18; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.5 "Source Sans 3", "Segoe UI", sans-serif; }
+    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0 80px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: clamp(32px, 5vw, 44px); line-height: 1.15; margin: 0 0 12px; }
+    .lede { color: var(--muted); max-width: 38rem; margin: 0 0 36px; }
+    ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+    li a.name { display: inline-block; font-weight: 700; color: var(--ink); text-decoration: none; font-size: 20px; }
+    li a.name:hover { color: var(--accent); }
+    li p { margin: 6px 0 0; color: var(--muted); font-size: 16px; }
+    .kicker { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+    footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Public demos only</p>
+    <h1>Five consumer tools, running as static demos.</h1>
+    <p class="lede">Each site works in the browser without an API key. Nothing here takes a card payment, and these pages do not send applications, listings, or exam results on your behalf.</p>
+    <ol>
+      <li>
+        <a class="name" href="nookshift/">Nookshift</a>
+        <p>See a new look on a photo of your actual room or garden, then decide what to spend. Browser demo now; founding waitlist for AI restyles.</p>
+      </li>
+      <li>
+        <a class="name" href="listready/">ListReady</a>
+        <p>Turn item photos and your notes into copy-ready listings for eBay, Poshmark, Mercari, Depop, and Vinted. Drafts only — it never posts or relists.</p>
+      </li>
+      <li>
+        <a class="name" href="tellme-coach/">TellMe Coach</a>
+        <p>Practise official UK driving-test “show me, tell me” safety questions out loud, with a debrief of the points you missed. Independent study aid, not affiliated with DVSA.</p>
+      </li>
+      <li>
+        <a class="name" href="quirepress/">Quire</a>
+        <p>Build print-ready KDP interiors and cover wraps for journals, planners, and coloring books, measured to published trim, bleed, and gutter rules.</p>
+      </li>
+      <li>
+        <a class="name" href="shiftready/">ShiftReady</a>
+        <p>A human-checked application pack for one registered-nurse job posting: resume, cover letter, interview questions, and a scored mock.</p>
+      </li>
+    </ol>
+    <footer>
+      Demo hub for <a href="https://github.com/vedetile-code/mvps">vedetile-code/mvps</a>. Questions: <a href="mailto:timwvedco@gmail.com">timwvedco@gmail.com</a>.
+    </footer>
+  </main>
+</body>
+</html>

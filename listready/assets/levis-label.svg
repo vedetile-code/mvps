@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#cfc0aa"/>
+  
+  <ellipse cx="320" cy="760" rx="200" ry="20" fill="#000" opacity="0.08"/>
+  <!-- folded waist close-up style -->
+  <rect x="80" y="160" width="480" height="420" rx="8" fill="#3e6588"/>
+  <rect x="80" y="160" width="480" height="70" fill="#2f4f6f"/>
+  <rect x="270" y="200" width="100" height="70" rx="4" fill="#c9a227" stroke="#8a7018" stroke-width="2"/>
+  <text x="320" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#3a2a10">LEVI'S</text>
+  <text x="320" y="252" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#3a2a10">501  32×30</text>
+  <path d="M140 300 H500" stroke="#c9a227" stroke-width="1.5" opacity="0.6"/>
+  <text x="320" y="360" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#e8f0f6">Waist tag · 32×30</text>
+  <text x="320" y="390" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="#d5e4ef">Care tag present · 100% cotton</text>
+  <text x="320" y="500" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#1a2a3a" opacity="0.5">Detail photo · demo illustration</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

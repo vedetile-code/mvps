@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quire studio — build a KDP-ready interior</title>
+  <meta name="description" content="Lay out a journal, planner, or coloring book to Amazon KDP trim, bleed, and gutter rules, then export the interior, cover, and listing pack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="studio">
+  <a class="skip" href="#preview">Skip to preview</a>
+  <div class="studio-shell">
+    <aside class="panel" aria-label="Book settings">
+      <div class="brand-row">
+        <a class="wordmark" href="index.html">Quire<span>Studio</span></a>
+        <a class="btn ghost" href="index.html" style="padding:6px 10px;font-size:13px">Home</a>
+      </div>
+
+      <h2>Book</h2>
+      <label for="type">Type</label>
+      <select id="type"></select>
+      <label for="trim">Trim size</label>
+      <select id="trim"></select>
+      <label for="pages">Page count</label>
+      <input id="pages" type="number" min="24" max="828" step="1" value="120">
+      <p class="help">Paperbacks need at least 24 pages. KDP rounds odd counts up.</p>
+      <label for="paper">Paper / ink</label>
+      <select id="paper"></select>
+      <label for="theme">Theme</label>
+      <select id="theme"></select>
+
+      <h2>Matter</h2>
+      <label for="title">Title</label>
+      <input id="title" type="text" maxlength="200" value="Morning Pages">
+      <label for="subtitle">Subtitle</label>
+      <input id="subtitle" type="text" maxlength="200" value="A lined journal">
+      <label for="author">Author name</label>
+      <input id="author" type="text" maxlength="120" value="Your Name">
+
+      <div id="line-style-wrap">
+        <label for="line-style">Line spacing</label>
+        <select id="line-style">
+          <option value="narrow">Narrow (0.25 in)</option>
+          <option value="college" selected>College (9/32 in)</option>
+          <option value="wide">Wide (11/32 in)</option>
+        </select>
+      </div>
+      <div id="prompt-theme-wrap" hidden>
+        <label for="prompt-theme">Prompt theme</label>
+        <select id="prompt-theme">
+          <option value="gratitude">Gratitude</option>
+          <option value="morning">Morning pages</option>
+          <option value="reflection">Reflection</option>
+          <option value="creativity">Creativity</option>
+        </select>
+      </div>
+
+      <h2>Options</h2>
+      <label class="check-row"><input id="bleed" type="checkbox"> Bleed (art can reach the trimmed edge)</label>
+      <label class="check-row"><input id="front-matter" type="checkbox" checked> Title and “belongs to” pages</label>
+      <div id="single-sided-wrap" hidden>
+        <label class="check-row"><input id="single-sided" type="checkbox" checked> Single-sided coloring art (blank backs)</label>
+      </div>
+      <label class="check-row"><input id="ai-used" type="checkbox"> This book will include AI-generated text or images</label>
+    </aside>
+
+    <section class="stage">
+      <div class="banner" id="mode-banner" hidden></div>
+      <div class="stage-bar">
+        <div class="nav-cluster">
+          <button class="btn ghost" type="button" id="prev-spread">Previous</button>
+          <button class="btn ghost" type="button" id="next-spread">Next</button>
+          <div id="spread-label" class="mono">Opening</div>
+        </div>
+        <div class="export-cluster">
+          <button class="btn ghost" type="button" id="ai-btn" data-action="ai">AI prompts</button>
+          <button class="btn ghost" type="button" data-action="listing">Listing pack</button>
+          <button class="btn ghost" type="button" data-action="cover">Cover PDF</button>
+          <button class="btn" type="button" data-action="interior">Interior PDF</button>
+        </div>
+      </div>
+      <div class="stage-canvas">
+        <div id="busy" hidden>Working…</div>
+        <canvas id="preview" width="1200" height="800" role="img" aria-label="Preview of a two-page spread with trim and safe area guides"></canvas>
+      </div>
+    </section>
+
+    <aside class="panel right" aria-label="Compliance and specs">
+      <div class="brand-row">
+        <span id="status-badge" class="badge">Checking</span>
+      </div>
+      <h2>File specifications</h2>
+      <div class="pills" id="spec-pills"></div>
+      <h2>Compliance checklist</h2>
+      <ul id="checklist"></ul>
+      <hr class="rule">
+      <p class="help">Specs follow KDP Help on trim, bleed, margins, spine, and barcode clearance, read 26 November 2026. Confirm the live calculator before you publish. Questions: <a data-contact href="mailto:timwvedco+quirepress@gmail.com">timwvedco+quirepress@gmail.com</a></p>
+    </aside>
+  </div>
+  <script src="vendor/pdf-lib.min.js"></script>
+  <script>
+    window.addEventListener("error", function (ev) {
+      if (ev && ev.target && ev.target.src && ev.target.src.indexOf("pdf-lib") !== -1 && !window.PDFLib) {
+        var s = document.createElement("script");
+        s.src = "https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js";
+        ev.target.after(s);
+      }
+    }, true);
+  </script>
+  <script src="js/kdp.js"></script>
+  <script src="js/prompts.js"></script>
+  <script src="js/generate.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

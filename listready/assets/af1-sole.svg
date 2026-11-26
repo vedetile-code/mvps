@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#e4ddd0"/>
+  
+  <ellipse cx="320" cy="720" rx="200" ry="22" fill="#000" opacity="0.08"/>
+  <path d="M140 200 C120 280 110 420 160 600 C200 700 440 700 480 600 C530 420 520 280 500 200 C470 140 190 140 140 200 Z" fill="#f3f3f3" stroke="#cfcfcf" stroke-width="3"/>
+  <path d="M180 260 H460 M200 360 H440 M210 460 H430 M230 560 H410" stroke="#d8d8d8" stroke-width="8"/>
+  <path d="M200 620 Q320 640 440 620" stroke="#b0b0b0" stroke-width="10" fill="none"/>
+  <text x="320" y="400" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="#888">Some sole marks · demo</text>
+  <text x="320" y="760" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#333" opacity="0.55">Air Force 1 · outsole</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

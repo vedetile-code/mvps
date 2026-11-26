@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice — TellMe Coach</title>
+  <meta name="description" content="Practise official DVSA show me / tell me questions out loud with a scored debrief. Independent study aid, not affiliated with DVSA.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="banner" id="api-status">Checking scoring mode…</div>
+  <div class="wrap practice-shell">
+    <header class="site">
+      <a class="brand" href="index.html">
+        <img class="mark" src="assets/logo.svg" alt="">
+        <div class="brand-name">TellMe <span>Coach</span></div>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="btn btn-ghost" href="index.html#waitlist">Waitlist</a>
+      </nav>
+    </header>
+
+    <section data-screen="gate" class="panel gate">
+      <p class="kicker">Before you start</p>
+      <h1>This is practice, not the official test.</h1>
+      <p>TellMe Coach is an independent study aid. It is not affiliated with, endorsed by, or approved by the Driver and Vehicle Standards Agency. Scores are for rehearsal only and do not predict whether you will pass.</p>
+      <ul>
+        <li>Tell-me answers are checked against the official GOV.UK points.</li>
+        <li>Show-me items have no official published model script. You will practise what you would do, sitting still. Confirm the controls in the car you use on test, with your instructor.</li>
+        <li>Do not practise show-me actions in a moving car except during a lesson or the test itself.</li>
+        <li>Always re-read the current official list before test day.</li>
+      </ul>
+      <p><a href="https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-questions/car-show-me-tell-me-vehicle-safety-questions">Official questions on GOV.UK</a></p>
+      <label style="display:flex;gap:0.6rem;align-items:flex-start;margin:1rem 0;">
+        <input id="ack" type="checkbox" style="width:auto;margin-top:0.3rem;">
+        <span>I understand this is self-study practice, not an official exam, and I will check answers with my instructor and the official publication.</span>
+      </label>
+      <p id="ack-warn" class="hidden fine" style="color:var(--red);">Please tick the box to continue.</p>
+      <button class="btn btn-primary" type="button" id="ack-btn">Continue to practice</button>
+    </section>
+
+    <section data-screen="modes" class="panel hidden">
+      <p class="kicker">Choose a session</p>
+      <h1>How do you want to practise?</h1>
+      <div class="mode-grid" style="margin-top:1rem;">
+        <button class="mode-card" type="button" data-mode="mock">
+          <strong>Free mock</strong>
+          One official tell-me question and one show-me prompt, chosen at random — the same shape as the real test.
+        </button>
+        <button class="mode-card" type="button" data-mode="tell">
+          <strong>All 14 tell-me questions</strong>
+          Answer the full official spoken list, with a follow-up if a required point is missing.
+        </button>
+        <button class="mode-card" type="button" data-mode="show">
+          <strong>Show-me prompts</strong>
+          Verbal practice only, sitting still, for the seven official on-the-move requests.
+        </button>
+        <button class="mode-card" type="button" data-mode="full">
+          <strong>Mixed bank</strong>
+          All tell-me and show-me items, shuffled.
+        </button>
+      </div>
+    </section>
+
+    <section data-screen="session" class="panel hidden examiner">
+      <div class="status-row">
+        <p class="kicker" id="session-title">Practice</p>
+        <span class="pill" id="q-kicker">Question</span>
+      </div>
+      <h2 class="question-text" id="q-text">Loading question…</h2>
+      <p class="fine" id="q-note"></p>
+      <p id="follow-note" class="form-note hidden"></p>
+      <div class="rec-row">
+        <button class="btn btn-ghost" type="button" id="repeat-btn">Hear it again</button>
+        <button class="btn btn-amber" type="button" id="rec-btn">Answer out loud</button>
+        <span id="rec-flag" class="pill listen hidden"></span>
+      </div>
+      <label>Your answer
+        <textarea class="answer-box" id="answer" placeholder="Speak or type your answer here. Ctrl+Enter or Cmd+Enter to submit."></textarea>
+      </label>
+      <div class="rec-row">
+        <button class="btn btn-primary" type="button" id="submit-btn">Submit answer</button>
+        <button class="btn btn-ghost" type="button" id="end-btn">End session</button>
+      </div>
+      <div id="result-block" class="hidden">
+        <div class="status-row" style="margin-top:0.8rem;">
+          <span class="pill" id="grade-pill">SAT</span>
+          <span class="fine">Practice grade against the official points — not an official test mark.</span>
+        </div>
+        <ul class="points" id="points"></ul>
+        <p class="ref" id="ref"></p>
+        <button class="btn btn-primary" type="button" id="next-btn">Next question</button>
+      </div>
+    </section>
+
+    <section data-screen="debrief" class="panel hidden">
+      <p class="kicker">Debrief</p>
+      <h1>Session recap</h1>
+      <p id="debrief-summary"></p>
+      <h3>By area</h3>
+      <div id="debrief-areas" class="debrief-grid"></div>
+      <h3>Unmet points</h3>
+      <div id="debrief-misses" class="debrief-grid"></div>
+      <h3>Study list</h3>
+      <ol id="study-list"></ol>
+      <p class="form-note">Self-study practice tool. Verify every answer with your instructor and the official publication. TellMe Coach does not predict a pass or a score on the real test.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="practice.html">Practise again</a>
+        <a class="btn btn-primary" href="index.html#waitlist">Join the pilot waitlist</a>
+        <a class="btn btn-ghost" href="https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-questions/car-show-me-tell-me-vehicle-safety-questions">Official list on GOV.UK</a>
+      </div>
+    </section>
+  </div>
+  <script src="js/questions.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/scorer.js"></script>
+  <script src="js/practice.js"></script>
+</body>
+</html>

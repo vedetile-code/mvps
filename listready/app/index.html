@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ListReady demo — draft a listing</title>
+  <meta name="description" content="Draft a copy-ready listing from photos and notes. Demo mode includes sample items. The tool never posts to marketplaces." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="app-body">
+  <div class="banner" id="mode-banner">
+    <strong>Demo mode.</strong> Sample items work without an API key. Photo analysis needs OPENAI_API_KEY on a local server. This tool never posts, relists, or logs into marketplaces.
+  </div>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="wordmark" href="../">ListReady <small>Draft only</small></a>
+      <div class="nav-links">
+        <a href="../#pricing">Pricing</a>
+        <a href="mailto:timwvedco+listready@gmail.com">Contact</a>
+        <a class="btn btn-ticket" href="../#preorder">Pre-order $9/mo</a>
+      </div>
+    </nav>
+
+    <div class="app-shell">
+      <aside class="panel" id="intake">
+        <h2>New draft</h2>
+        <p class="fine">Start with a sample, or add your own photos and notes. Output is text for you to paste.</p>
+
+        <p class="kicker" style="margin-top:16px;">Sample items</p>
+        <div class="samples" id="samples"></div>
+
+        <p class="kicker">Your photos</p>
+        <div class="dropzone" id="dropzone" tabindex="0">
+          <label for="file-input">Drop 3–8 photos, or click to choose</label>
+          <input id="file-input" type="file" accept="image/*" multiple hidden />
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+
+        <div class="form" style="margin-top:14px;">
+          <div class="form-row">
+            <div>
+              <label for="brand">Brand</label>
+              <input id="brand" type="text" placeholder="If you know it" />
+            </div>
+            <div>
+              <label for="category">Category</label>
+              <input id="category" type="text" placeholder="e.g. men’s jeans" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="size">Size</label>
+              <input id="size" type="text" placeholder="e.g. 32x30" />
+            </div>
+            <div>
+              <label for="color">Color</label>
+              <input id="color" type="text" />
+            </div>
+          </div>
+          <div>
+            <label for="condition">Condition</label>
+            <select id="condition">
+              <option value="">Select…</option>
+              <option>New with tags</option>
+              <option>New without tags</option>
+              <option>Excellent pre-owned</option>
+              <option>Good pre-owned</option>
+              <option>Fair, with wear</option>
+            </select>
+          </div>
+          <div>
+            <label for="measurements">Measurements you took</label>
+            <textarea id="measurements" placeholder="e.g. waist 16.5&quot; flat, rise 11&quot;, inseam 30&quot;"></textarea>
+          </div>
+          <div>
+            <label for="flaws">Flaws and wear</label>
+            <textarea id="flaws" placeholder="Be specific. These will be repeated in every draft."></textarea>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="cost">What you paid (optional)</label>
+              <input id="cost" type="text" placeholder="e.g. $8" />
+            </div>
+            <div>
+              <label for="retail">Known original retail (optional)</label>
+              <input id="retail" type="text" />
+            </div>
+          </div>
+          <div>
+            <label for="notes">Other notes</label>
+            <textarea id="notes" placeholder="Material, era, extras, what you do not want invented…"></textarea>
+          </div>
+          <p class="kicker">Draft for</p>
+          <div class="checks" id="platform-checks"></div>
+          <button class="btn" type="button" id="generate">Draft listings</button>
+          <p class="fine" id="ai-status">Checking for a local AI key…</p>
+        </div>
+      </aside>
+
+      <main id="output">
+        <div class="empty" id="empty">
+          <p class="eyebrow">No draft yet</p>
+          <h2>Pick a sample or add photos, then draft.</h2>
+          <p>You will get platform-specific titles and descriptions, item specifics, a price range, and a manual comps checklist. Nothing is posted anywhere.</p>
+        </div>
+        <div id="working" hidden>
+          <div class="loading"><span class="dot"></span> Writing drafts…</div>
+        </div>
+        <div id="results" hidden></div>
+      </main>
+    </div>
+  </div>
+  <script src="../data/demo-items.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

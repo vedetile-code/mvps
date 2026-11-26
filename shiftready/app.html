@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiftReady workspace — intake, draft, and human review</title>
+  <meta name="description" content="Paste a resume and a job posting, or load the sample RN pack, then review the draft against a human-signoff checklist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-bar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><strong>SHIFTREADY</strong><span>Workspace</span></a>
+      <div class="nav-links">
+        <span class="mode-pill" id="modePill">Checking mode…</span>
+        <a href="index.html">Offer</a>
+        <a class="btn ghost" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20order">Order a real pack</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap workspace">
+    <p class="eyebrow">Intake → draft → checklist</p>
+    <h1>Build a pack, then hold it for review.</h1>
+    <p class="lede">Load the sample (Maya Ortiz, a med-surg RN applying to a fictional PCU role) or paste your own materials. The public demo does not call a model unless you are running the local server with an environment key.</p>
+
+    <div class="progress" id="progress">
+      <span class="on" data-step="intake">1. Intake</span>
+      <span data-step="draft">2. Draft</span>
+      <span data-step="review">3. Human review</span>
+    </div>
+
+    <section id="intakePanel">
+      <div class="actions" style="margin-bottom:16px">
+        <button class="btn copper" type="button" id="loadSample">Load sample inputs</button>
+        <button class="btn ghost" type="button" id="clearForm">Clear</button>
+      </div>
+      <div class="form-grid">
+        <div class="row-2">
+          <label>Full name<input id="fullName" autocomplete="name" placeholder="As it should appear on the resume"></label>
+          <label>Credentials<input id="credentials" placeholder="BSN, RN"></label>
+        </div>
+        <div class="row-2">
+          <label>Email<input id="email" type="email" placeholder="you@email.com"></label>
+          <label>Phone<input id="phone" placeholder="(555) 555-5555"></label>
+        </div>
+        <div class="row-2">
+          <label>Location<input id="location" placeholder="City, ST"></label>
+          <label>Pack
+            <select id="tier">
+              <option value="pilot">Pilot $19 — resume and letter</option>
+              <option value="application">Application $49 — plus 30 questions</option>
+              <option value="interview" selected>Interview $99 — plus scored mock</option>
+            </select>
+          </label>
+        </div>
+        <div class="row-2">
+          <label>Target role<input id="targetRole" placeholder="Night-shift PCU RN"></label>
+          <label>Target employer<input id="targetEmployer" placeholder="Hospital and unit"></label>
+        </div>
+        <label>Current resume
+          <span class="help">Paste text. This demo does not upload files to a server when you are on the static site.</span>
+          <textarea id="resume" required placeholder="Paste the current resume"></textarea>
+        </label>
+        <label>Job posting
+          <textarea id="posting" required placeholder="Paste the full posting, including required and preferred qualifications"></textarea>
+        </label>
+        <label>Achievements and numbers (one per line)
+          <textarea id="achievements" style="min-height:110px" placeholder="Precepted 4 new graduates in 2025"></textarea>
+        </label>
+        <label>Do not claim
+          <span class="help">Certifications you do not hold, units you only floated to, or anything a draft might be tempted to inflate.</span>
+          <textarea id="doNotClaim" style="min-height:90px"></textarea>
+        </label>
+        <label>Relocation, start date, and other notes
+          <textarea id="notes" style="min-height:90px"></textarea>
+        </label>
+        <div class="actions">
+          <button class="btn" type="button" id="runBtn">Generate draft</button>
+          <span class="muted" id="runHint"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultPanel" class="hidden">
+      <div class="banner" id="gateBanner"></div>
+      <div class="actions">
+        <button class="btn ghost" type="button" id="backBtn">Back to intake</button>
+        <button class="btn ghost" type="button" id="printBtn">Print or save as PDF</button>
+        <button class="btn ghost" type="button" id="downloadBtn">Download pack.json</button>
+      </div>
+      <div class="tabs" id="tabs">
+        <button type="button" class="on" data-tab="resume">Resume</button>
+        <button type="button" data-tab="letter">Cover letter</button>
+        <button type="button" data-tab="questions">Interview questions</button>
+        <button type="button" data-tab="mock">Mock interview</button>
+        <button type="button" data-tab="linkedin">LinkedIn</button>
+        <button type="button" data-tab="review">Human review</button>
+      </div>
+      <div class="pane on" id="pane-resume"><div class="prose" id="outResume"></div></div>
+      <div class="pane" id="pane-letter"><div class="prose" id="outLetter"></div></div>
+      <div class="pane" id="pane-questions"><div id="outQuestions"></div></div>
+      <div class="pane" id="pane-mock"><div id="outMock"></div></div>
+      <div class="pane" id="pane-linkedin"><div id="outLinkedin"></div></div>
+      <div class="pane" id="pane-review"><div id="outReview"></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap muted">
+      Contact for paid packs: <a href="mailto:timwvedco+shiftready@gmail.com">timwvedco+shiftready@gmail.com</a>.
+      Payments: Fiverr or PayPal. This workspace will not send your materials to an employer.
+    </div>
+  </footer>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

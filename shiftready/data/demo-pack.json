@@ -1,0 +1,665 @@
+{
+  "product": "ShiftReady",
+  "occupation": "Registered Nurse (hospital staff and travel / relocation RN roles)",
+  "tier": "interview",
+  "mode": "demo",
+  "generated_on": "2026-11-26",
+  "disclaimer": "This pack is a draft for a job application. It is not a guarantee of a callback, interview, or job. A human must complete the review checklist before anything is sent to an employer. Licensure, certification, and employment facts must match the candidate\u2019s source documents.",
+  "resume_markdown": "# Maya Ortiz, BSN, RN\nHouston, TX \u00b7 Relocating to Seattle, WA  \nmaya.ortiz.demo@email.com \u00b7 (713) 555-0148\n\n**Licensure and certifications**\n- Registered Nurse, Texas Board of Nursing, compact (eNLC) multistate license, expires June 2027\n- Basic Life Support (BLS), American Heart Association, expires March 2027\n- Advanced Cardiovascular Life Support (ACLS), American Heart Association, expires March 2027\n\n**Professional summary**\nCompact-licensed medical-surgical RN with 3 years and 5 months of acute-care experience, current BLS and ACLS, Epic documentation, and recent PCU float shifts that included telemetry monitoring and vasoactive drip titration with charge-nurse support. Weekend charge about twice a month since November 2024; precepted 4 new-graduate nurses in 2025. Seeking a night-shift Progressive Care staff role and available to relocate.\n\n**Experience**\n\n**Staff Registered Nurse, Medical-Surgical Unit**  \nWestfield Community Hospital, Houston, TX  \nJune 2022 \u2013 present\n- Floated to the 16-bed progressive care unit for 9 shifts in the past 6 months, including continuous telemetry monitoring and titration of vasoactive drips with charge-nurse support.\n- Serve as weekend charge nurse about twice a month since November 2024, including staffing adjustments and rapid-response support.\n- Precepted 4 new-graduate nurses in 2025.\n- Care for a typical assignment of 5 adult med-surg patients per shift on a 48-bed unit using Epic, including assessments, medication administration, IV therapy, blood-product transfusion, wound care, and SBAR handoff.\n- Member of the unit skin-integrity committee; after the committee introduced a turning-schedule change, hospital-acquired pressure injuries on the unit fell from 6 to 2 over two quarters in 2025.\n- Perform admission and discharge teaching for patients and families.\n\n**Nurse Extern, Medical-Surgical Unit**  \nWestfield Community Hospital, Houston, TX  \nJanuary 2022 \u2013 May 2022\n- Assisted RNs with vital signs, documentation in Epic, mobility, and hygiene for adult med-surg patients while completing senior practicum.\n\n**Education**\nBachelor of Science in Nursing, University of Houston, May 2022\n\n**Skills**\nTelemetry monitoring, vasoactive drip titration (with charge-nurse support on PCU float shifts), Epic EHR, SBAR handoff, charge support, precepting, rapid-response participation, IV therapy, blood products, wound care, patient and family education\n",
+  "cover_letter_markdown": "# Cover letter\n\nMaya Ortiz, BSN, RN  \nHouston, TX \u00b7 maya.ortiz.demo@email.com \u00b7 (713) 555-0148\n\nHiring Manager  \nNorth Harbor Medical Center, Progressive Care Unit  \nSeattle, WA\n\nDear Hiring Manager,\n\nI am applying for the night-shift Progressive Care Unit RN role at North Harbor Medical Center. I am a compact-licensed RN with 3 years and 5 months of acute-care experience at Westfield Community Hospital in Houston, current BLS and ACLS, and I am available to relocate to Seattle and start in 6 weeks.\n\nMy core staffing line is adult medical-surgical nursing on a 48-bed unit, typically 5 patients, documented in Epic. I have also floated to our 16-bed progressive care unit for 9 shifts in the past 6 months, where I monitored continuous telemetry and titrated vasoactive drips with charge-nurse support. I want to be direct: I have not held a full-time PCU staff position, and I do not hold PCCN or CCRN certification. The float work is the PCU experience I can stand behind, and I am looking for a staff PCU role where I can build on it on nights, 3x12.\n\nI have served as weekend charge nurse about twice a month since November 2024 and precepted 4 new-graduate nurses in 2025. I also sit on our unit skin-integrity committee; after the committee introduced a turning-schedule change, hospital-acquired pressure injuries on the unit fell from 6 to 2 over two quarters in 2025. I would welcome the chance to discuss how this experience translates to North Harbor\u2019s 28-bed PCU.\n\nThank you for your time.\n\nSincerely,  \nMaya Ortiz, BSN, RN\n",
+  "interview_questions": [
+    {
+      "id": 1,
+      "category": "clinical",
+      "question": "Walk me through how you assess and prioritize a PCU or step-down assignment at the start of a night shift.",
+      "why_asked": "Tests prioritization for the unit in the posting.",
+      "talking_points": [
+        "Use only your actual assignment sizes and unit types.",
+        "Name the first checks you really do (vitals, drips, rhythms, new admits)."
+      ]
+    },
+    {
+      "id": 2,
+      "category": "clinical",
+      "question": "A patient on continuous telemetry goes from sinus rhythm to a new irregular rhythm. What do you do first, and when do you escalate?",
+      "why_asked": "The posting requires telemetry experience.",
+      "talking_points": [
+        "Stay inside assessments and escalations you have actually performed.",
+        "Do not invent ACLS megacode stories if they are not in your history."
+      ]
+    },
+    {
+      "id": 3,
+      "category": "clinical",
+      "question": "Describe a time you titrated, or assisted with, a vasoactive infusion. What did you monitor?",
+      "why_asked": "The posting lists titratable vasoactive drips.",
+      "talking_points": [
+        "If your experience was float-only or with charge-nurse support, say so.",
+        "Name the parameters you were responsible for."
+      ]
+    },
+    {
+      "id": 4,
+      "category": "scenario",
+      "question": "You have a full assignment, a new admission is on the way, and a patient\u2019s blood pressure is trending down. How do you sequence your work?",
+      "why_asked": "Night-shift PCU work is a sequencing problem.",
+      "talking_points": [
+        "Use a real night if you have one.",
+        "Include when you would call charge or a rapid response."
+      ]
+    },
+    {
+      "id": 5,
+      "category": "behavioral",
+      "question": "Tell me about a time you gave a difficult SBAR handoff or had to escalate a concern that was not initially shared by another clinician.",
+      "why_asked": "The posting emphasizes SBAR and interdisciplinary collaboration.",
+      "talking_points": [
+        "Situation, background, assessment, recommendation.",
+        "Keep patient identifiers out of the story."
+      ]
+    },
+    {
+      "id": 6,
+      "category": "leadership",
+      "question": "Describe your charge-nurse experience. What decisions were you actually responsible for?",
+      "why_asked": "Charge experience is preferred on the posting.",
+      "talking_points": [
+        "Frequency and start date, if you have them.",
+        "Staffing, rapid-response support, or escalation \u2014 only what you did."
+      ]
+    },
+    {
+      "id": 7,
+      "category": "leadership",
+      "question": "Tell me about precepting a new nurse. What did you find hardest, and what did you change?",
+      "why_asked": "Precepting is preferred on the posting.",
+      "talking_points": [
+        "Use your actual preceptee count and year.",
+        "One concrete teaching adjustment."
+      ]
+    },
+    {
+      "id": 8,
+      "category": "behavioral",
+      "question": "Give an example of quality or committee work you contributed to, and what changed on the unit.",
+      "why_asked": "The posting mentions unit quality work.",
+      "talking_points": [
+        "Credit the team if it was a committee.",
+        "Use only numbers that appear in your resume or intake."
+      ]
+    },
+    {
+      "id": 9,
+      "category": "clinical",
+      "question": "How do you document and review a shift in Epic under time pressure?",
+      "why_asked": "Epic is used on the unit and is preferred experience.",
+      "talking_points": [
+        "Only claim Epic if it is in your resume.",
+        "Name the parts of the chart you actually own."
+      ]
+    },
+    {
+      "id": 10,
+      "category": "logistics",
+      "question": "This role is nights, 3x12, with weekend and holiday rotation, and may involve relocation. What is your plan for the first 90 days?",
+      "why_asked": "Schedule and relocation are explicit in the posting.",
+      "talking_points": [
+        "Availability and license (including compact, if you have it).",
+        "Do not oversell a start date you cannot meet."
+      ]
+    },
+    {
+      "id": 11,
+      "category": "clinical",
+      "question": "How do you recognize and respond to early signs of deterioration before a rapid response is called?",
+      "why_asked": "PCU patients can decompensate quickly; the posting mentions rapid response.",
+      "talking_points": [
+        "Use a real patient pattern you have seen, without identifiers."
+      ]
+    },
+    {
+      "id": 12,
+      "category": "scenario",
+      "question": "A family is angry about a delay and a second patient is ringing for pain medication. What do you do?",
+      "why_asked": "Night PCU work includes family communication and competing tasks.",
+      "talking_points": [
+        "Safety first, then communication.",
+        "Keep the example within your practice."
+      ]
+    },
+    {
+      "id": 13,
+      "category": "clinical",
+      "question": "What is your process for blood-product administration and double checks?",
+      "why_asked": "Transfusion work appears in many acute-care RN backgrounds and must be described accurately.",
+      "talking_points": [
+        "Describe only the policy steps you follow.",
+        "Do not invent a rare reaction story."
+      ]
+    },
+    {
+      "id": 14,
+      "category": "behavioral",
+      "question": "Tell me about a time you floated or took an unfamiliar assignment. How did you stay safe?",
+      "why_asked": "Float experience, if present, is directly relevant to a unit change.",
+      "talking_points": [
+        "Name the unit, the number of shifts, and who you used as a resource."
+      ]
+    },
+    {
+      "id": 15,
+      "category": "clinical",
+      "question": "How do you teach a patient and family about a new cardiac or step-down plan of care at 2 a.m.?",
+      "why_asked": "The posting lists patient and family education.",
+      "talking_points": [
+        "Keep teaching points inside what you actually teach."
+      ]
+    },
+    {
+      "id": 16,
+      "category": "scenario",
+      "question": "Two drip rate changes are due, a lab is critically abnormal, and you have not had a break. Walk through the next 20 minutes.",
+      "why_asked": "Tests judgment under typical PCU load.",
+      "talking_points": [
+        "Prioritize the critical lab and high-alert infusions.",
+        "Say when you would ask for help."
+      ]
+    },
+    {
+      "id": 17,
+      "category": "leadership",
+      "question": "How have you handled a staffing hole or a sick call when you were in charge or the senior nurse?",
+      "why_asked": "Charge and night-shift staffing often come up.",
+      "talking_points": [
+        "Only use charge examples if you have been charge."
+      ]
+    },
+    {
+      "id": 18,
+      "category": "behavioral",
+      "question": "Describe a conflict with a colleague and how it ended.",
+      "why_asked": "Standard behavioral screen.",
+      "talking_points": [
+        "No names.",
+        "Focus on the professional repair."
+      ]
+    },
+    {
+      "id": 19,
+      "category": "clinical",
+      "question": "What do you check before you start or change a high-alert infusion?",
+      "why_asked": "High-alert medication safety is core to PCU work.",
+      "talking_points": [
+        "Rights, pump, concentration, independent check if that is your practice."
+      ]
+    },
+    {
+      "id": 20,
+      "category": "logistics",
+      "question": "Why this unit, and why nights?",
+      "why_asked": "Fit and retention question.",
+      "talking_points": [
+        "Tie to your stated goal in the intake, not a invented Magnet story."
+      ]
+    },
+    {
+      "id": 21,
+      "category": "clinical",
+      "question": "How do you manage wound care and skin integrity on a busy shift?",
+      "why_asked": "Relevant if skin-integrity work is in the resume; still common on PCU.",
+      "talking_points": [
+        "Use committee or turning-schedule facts only if they are yours."
+      ]
+    },
+    {
+      "id": 22,
+      "category": "scenario",
+      "question": "You disagree with a physician\u2019s order that you believe is unsafe. What do you do?",
+      "why_asked": "Safety and chain of command.",
+      "talking_points": [
+        "Chain of command as you actually use it."
+      ]
+    },
+    {
+      "id": 23,
+      "category": "behavioral",
+      "question": "Tell me about a mistake or a near miss and what changed in your practice afterward.",
+      "why_asked": "Judgment and honesty.",
+      "talking_points": [
+        "No patient identifiers.",
+        "One specific change."
+      ]
+    },
+    {
+      "id": 24,
+      "category": "clinical",
+      "question": "What rhythm changes have you personally recognized and escalated?",
+      "why_asked": "Telemetry competency should be concrete.",
+      "talking_points": [
+        "Do not list rhythms you cannot discuss."
+      ]
+    },
+    {
+      "id": 25,
+      "category": "leadership",
+      "question": "How do you support a new or floating nurse on a night shift without dropping your own assignment?",
+      "why_asked": "Precepting and charge both show up in preferred qualifications.",
+      "talking_points": [
+        "Use a real night if you have one."
+      ]
+    },
+    {
+      "id": 26,
+      "category": "logistics",
+      "question": "What questions do you have about orientation, ratios, and night-shift resources on this PCU?",
+      "why_asked": "Strong candidates interview the unit too.",
+      "talking_points": [
+        "Ratios listed in the posting, charge coverage, rapid-response support, orientation length."
+      ]
+    },
+    {
+      "id": 27,
+      "category": "clinical",
+      "question": "Walk through an admission to your current unit, including orders, history, and safety checks.",
+      "why_asked": "Admissions are a daily PCU task.",
+      "talking_points": [
+        "Use your current workflow, including Epic if you use it."
+      ]
+    },
+    {
+      "id": 28,
+      "category": "behavioral",
+      "question": "A posting may prefer a specialty certification you do not have. How do you talk about that?",
+      "why_asked": "Honesty about PCCN or CCRN gaps protects the candidate.",
+      "talking_points": [
+        "State the gap plainly.",
+        "Name the related experience you do have.",
+        "Do not imply a certification is in progress unless it is."
+      ]
+    },
+    {
+      "id": 29,
+      "category": "scenario",
+      "question": "It is 4 a.m., you have an unstable patient, and the charge nurse is in another room. What does 'staying with the patient' look like for you, and how do you get help?",
+      "why_asked": "Night-shift reality check.",
+      "talking_points": [
+        "Call for help early.",
+        "Describe monitoring you would not leave."
+      ]
+    },
+    {
+      "id": 30,
+      "category": "logistics",
+      "question": "Is there anything on your resume that you want to clarify, including dates, license status, or unit mix?",
+      "why_asked": "Gives a chance to explain float versus staff experience before they assume.",
+      "talking_points": [
+        "Clarify float vs staff PCU time if that applies.",
+        "License compact status and expiration if asked."
+      ]
+    }
+  ],
+  "mock_interview": {
+    "scoring_notes": "Self-score or reviewer-score each question 1\u20135 on specificity, clinical soundness, structure (STAR where it fits), and fit to the posting. A 5 uses verifiable facts, names limits honestly, and stays inside the candidate\u2019s practice. This is rehearsal, not a prediction of a hiring decision.",
+    "sample_session": {
+      "label": "Scored practice session (demo)",
+      "overall": "26 / 40",
+      "summary": "Strong on charge, precepting, and an honest PCU-float story. Weaker when the answer stayed general on rhythm escalation and did not name a first action. Practice those two out loud before the interview.",
+      "answers": [
+        {
+          "id": 1,
+          "question": "Describe a time you titrated, or assisted with, a vasoactive infusion. What did you monitor?",
+          "answer": "On 9 PCU float shifts in the past 6 months I titrated vasoactive drips with charge-nurse support. I monitored blood pressure and rhythm, stayed with the patient after a change, and asked charge to confirm the titration step when I was not the primary PCU nurse for that assignment. I have not been a full-time PCU staff nurse, so I do not treat this as independent PCU drip management.",
+          "scores": {
+            "specificity": 5,
+            "clinical_soundness": 4,
+            "structure": 4,
+            "fit_to_posting": 5
+          },
+          "total": 18,
+          "out_of": 20,
+          "feedback": "The limit (float, with charge support) is exactly what a reviewer wants to hear. Keep it."
+        },
+        {
+          "id": 2,
+          "question": "A patient on continuous telemetry goes from sinus rhythm to a new irregular rhythm. What do you do first, and when do you escalate?",
+          "answer": "I would look at the patient, check the boxes, and tell the charge nurse if it looks serious.",
+          "scores": {
+            "specificity": 2,
+            "clinical_soundness": 2,
+            "structure": 2,
+            "fit_to_posting": 2
+          },
+          "total": 8,
+          "out_of": 20,
+          "feedback": "Too vague. Name the first look at the patient (pulse, pressure, symptoms), artifact vs true rhythm, a specific escalation path, and when you would call a rapid response. Do not invent a code story."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": 1,
+        "question": "Describe a time you titrated, or assisted with, a vasoactive infusion. What did you monitor?",
+        "suggested_answer": "On 9 PCU float shifts in the past 6 months at Westfield Community Hospital I titrated vasoactive drips with charge-nurse support. I monitored blood pressure and rhythm, stayed with the patient after a rate change, and used charge as a resource. I would say clearly that this is float experience, not a full-time PCU staff line.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "Names 9 float shifts, the 16-bed PCU, and charge-nurse support."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "Mentions monitoring and escalation, no invented drugs or doses."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Situation, task, action, result, plus the limit of the experience."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Connects to North Harbor PCU drip work without overstating."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "A patient on continuous telemetry goes from sinus rhythm to a new irregular rhythm. What do you do first, and when do you escalate?",
+        "suggested_answer": "Assess the patient first, not only the screen: pulse, blood pressure, symptoms, and whether the tracing is artifact. If the patient is unstable, stay, call for help, and use the rapid-response path I use on my current unit. If stable, confirm the rhythm, notify the covering provider or charge, and document in Epic. I would only describe rhythms I have actually recognized.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "Patient first, then rhythm, then a clear escalate-or-not point."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "Does not skip a pulse check or invent a full ACLS scenario."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Ordered steps someone else could follow."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Matches a telemetry-required PCU night shift."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Describe your charge-nurse experience. What decisions were you actually responsible for?",
+        "suggested_answer": "I have been weekend charge about twice a month since November 2024 on a 48-bed med-surg unit. I have made staffing adjustments and supported rapid-response events. I would not claim house-supervisor or budget authority I do not have.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "Twice a month since November 2024, 48-bed unit."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "Scope is realistic for unit charge."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Role, frequency, decisions, limit."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Maps to preferred charge experience."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Tell me about precepting a new nurse. What did you find hardest, and what did you change?",
+        "suggested_answer": "I precepted 4 new-graduate nurses in 2025. The hard part was slowing down SBAR and medication teaching on a 5-patient assignment. I started planning one focused skill per shift instead of covering everything at once.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "4 new graduates in 2025, one concrete change."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "Teaching stays inside safe practice."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "STAR with a real adjustment."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Maps to preferred precepting experience."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Give an example of quality work you contributed to, and what changed.",
+        "suggested_answer": "I am a member of the unit skin-integrity committee. After the committee introduced a turning-schedule change, HAPIs on the unit fell from 6 to 2 over two quarters in 2025. I would not claim I did that alone.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "6 to 2 over two quarters in 2025, committee credited."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "No causal over-claim."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Role, action, measured result."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Maps to unit quality work."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "This role is nights, 3x12, and may involve relocating to Seattle. What is your plan?",
+        "suggested_answer": "I am willing to relocate to Seattle and can start in 6 weeks. I hold a current compact (eNLC) license, with BLS and ACLS through March 2027. I already work a hospital RN schedule and am asking for nights, 3x12.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "6-week start, compact license, cert end dates."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "License talk is accurate."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "License, timing, schedule."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Answers nights, relocation, and licensure together."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "A posting may prefer PCCN or CCRN, which you do not have. How do you talk about that?",
+        "suggested_answer": "I do not hold PCCN or CCRN. My related experience is 9 PCU float shifts with telemetry and vasoactive drips under charge-nurse support, plus 3 years and 5 months of acute-care med-surg work. I am applying because I want a staff PCU role, not because I already have the certification.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "States the missing cert and the float count plainly."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "No hint that a cert is in progress unless it is."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Gap, evidence, motive."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Handles a preferred qualification honestly."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "You have a full assignment, a new admission is coming, and a blood pressure is trending down. How do you sequence the next steps?",
+        "suggested_answer": "The trending-down blood pressure comes first: stay with that patient, recheck, look at rhythm and drips, and escalate or call a rapid response if they are unstable. I would delay the admission or hand it to charge rather than leave an unstable patient. I would ground this in a night I have actually worked on med-surg or on a PCU float, not a hypothetical perfect sequence.",
+        "rubric": [
+          {
+            "criterion": "specificity",
+            "what_good_looks_like": "A clear first patient and a request for help."
+          },
+          {
+            "criterion": "clinical_soundness",
+            "what_good_looks_like": "Unstable patient before admission paperwork."
+          },
+          {
+            "criterion": "structure",
+            "what_good_looks_like": "Ordered steps."
+          },
+          {
+            "criterion": "fit_to_posting",
+            "what_good_looks_like": "Fits a night PCU load."
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    "PCCN or CCRN certification"
+  ],
+  "mapped_requirements": [
+    {
+      "requirement": "Current RN license in Washington, or a compact (eNLC) multistate license",
+      "priority": "required",
+      "status": "supported",
+      "evidence": "Compact (eNLC) multistate license is in the resume; Washington is an eNLC state, so a separate WA-only license is not claimed."
+    },
+    {
+      "requirement": "Current BLS and ACLS (American Heart Association)",
+      "priority": "required",
+      "status": "supported",
+      "evidence": "- Basic Life Support (BLS"
+    },
+    {
+      "requirement": "At least 2 years of recent acute-care RN experience",
+      "priority": "required",
+      "status": "supported",
+      "evidence": "Resume states more than two years of acute-care RN experience."
+    },
+    {
+      "requirement": "Telemetry experience",
+      "priority": "required",
+      "status": "supported",
+      "evidence": "d progressive care unit for 9 shifts in the past 6 months, including continuous telemetry monitoring and titration of vasoactive drips with charge-nurse support."
+    },
+    {
+      "requirement": "Ability to work night shift, including weekends and holidays",
+      "priority": "required",
+      "status": "supported",
+      "evidence": "Nights, 3x12\", \"achievements\": [\"Precepted 4 new-graduate nurses in 2025\", \"Weekend ch"
+    },
+    {
+      "requirement": "Progressive care, step-down, or intermediate-care experience",
+      "priority": "preferred",
+      "status": "partial",
+      "evidence": "PCU experience is float-only, not a full-time PCU staff line."
+    },
+    {
+      "requirement": "Charge nurse experience",
+      "priority": "preferred",
+      "status": "supported",
+      "evidence": "nistration, IV therapy, blood-product transfusion, wound care, admission and discharge teaching, and SBAR handoff."
+    },
+    {
+      "requirement": "Precepting or clinical-education experience",
+      "priority": "preferred",
+      "status": "supported",
+      "evidence": "- Precepted 4 new-graduate nurses in 2025."
+    },
+    {
+      "requirement": "Epic experience",
+      "priority": "preferred",
+      "status": "supported",
+      "evidence": "ypical assignment of 5 adult med-surg patients per shift on a 48-bed unit using Epic."
+    },
+    {
+      "requirement": "PCCN or CCRN certification",
+      "priority": "preferred",
+      "status": "gap",
+      "evidence": ""
+    }
+  ],
+  "fact_flags": [],
+  "review_checklist": [
+    {
+      "id": "no-invented-credentials",
+      "label": "No license, certification, or credential appears that is missing from the inputs.",
+      "status": "pass",
+      "detail": "No invented credentials detected by the checker."
+    },
+    {
+      "id": "no-invented-employers",
+      "label": "No employer or facility is added that is missing from the inputs.",
+      "status": "pass",
+      "detail": "No invented employers detected by the checker."
+    },
+    {
+      "id": "numbers-traced",
+      "label": "Every number, ratio, and date in the draft can be traced to the inputs or is clearly about the employer\u2019s posting.",
+      "status": "pass",
+      "detail": "No untraced figures detected by the checker."
+    },
+    {
+      "id": "gaps-visible",
+      "label": "Requirements with no supporting fact are listed as gaps, not written into the resume as experience.",
+      "status": "pass",
+      "detail": "1 gap(s), 1 partial match(es). PCCN or CCRN certification"
+    },
+    {
+      "id": "no-fake-connection",
+      "label": "The cover letter does not invent a personal history with the employer.",
+      "status": "review",
+      "detail": "Human reviewer: search the letter for claimed visits, friends on staff, or 'long admired' language that is not in the intake."
+    },
+    {
+      "id": "contact-accurate",
+      "label": "Name, email, phone, and licensure dates match the intake and resume.",
+      "status": "review",
+      "detail": "Human reviewer: compare the header line by line."
+    },
+    {
+      "id": "tone-and-format",
+      "label": "Resume uses fragments, not first person. Letter is one page. Files are cleanly named.",
+      "status": "review",
+      "detail": "Human reviewer: typography, tense, and file names before delivery."
+    },
+    {
+      "id": "no-promises",
+      "label": "No callback, hire, or exam-pass promise appears in the pack or in client-facing notes.",
+      "status": "pass",
+      "detail": "Default copy avoids outcome guarantees."
+    },
+    {
+      "id": "human-signoff",
+      "label": "Reviewer spent 20\u201340 minutes, resolved every fail, and signed off.",
+      "status": "pending",
+      "detail": "This gate is manual. Do not send the pack until it is signed."
+    }
+  ],
+  "review_gate": {
+    "status": "ready_for_human_review",
+    "blocker_count": 0,
+    "instruction": "Do not deliver this pack until every fail is cleared and the human-signoff item is marked signed."
+  },
+  "linkedin": {
+    "headline": "Registered Nurse, BSN | Med-surg staff RN, compact (eNLC) license, recent PCU float | Open to Seattle relocation",
+    "about": "I am a compact-licensed RN with 3 years and 5 months of acute-care experience on a 48-bed medical-surgical unit at Westfield Community Hospital in Houston. Current BLS and ACLS. Weekend charge about twice a month since November 2024. Precepted 4 new-graduate nurses in 2025. I have floated to a 16-bed progressive care unit for 9 shifts in the past 6 months, including telemetry monitoring and vasoactive drip titration with charge-nurse support. I do not hold PCCN or CCRN and have not held a full-time PCU staff line. I am looking for a night-shift progressive care role and can relocate to Seattle."
+  },
+  "draft_source": "demo-sample",
+  "included": [
+    "resume",
+    "cover_letter",
+    "interview_questions",
+    "mock_interview",
+    "linkedin",
+    "review_checklist"
+  ]
+}

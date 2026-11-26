@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#ece7dc"/>
+  
+  <ellipse cx="320" cy="620" rx="230" ry="28" fill="#000" opacity="0.1"/>
+  <!-- sole -->
+  <path d="M80 520 C90 560 140 580 240 585 L500 560 C560 548 580 520 570 500 L90 500 Z" fill="#efefef" stroke="#c8c8c8" stroke-width="2"/>
+  <path d="M90 500 L570 500 L560 470 L100 478 Z" fill="#f7f7f7"/>
+  <!-- mid marks -->
+  <path d="M200 555 Q300 568 480 548" stroke="#b9b9b9" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- upper -->
+  <path d="M120 478 C130 360 200 300 310 295 C400 292 460 330 500 400 L540 470 L100 478 Z" fill="#ffffff" stroke="#d0d0d0" stroke-width="2"/>
+  <!-- swoosh -->
+  <path d="M200 450 C280 430 360 400 470 390 C400 430 320 455 230 468 Z" fill="#111"/>
+  <!-- laces -->
+  <path d="M280 320 L360 318 M275 345 L365 342 M272 370 L370 366 M270 395 L368 390" stroke="#111" stroke-width="3"/>
+  <ellipse cx="250" cy="330" rx="18" ry="10" fill="#eee" stroke="#ccc"/>
+  <text x="320" y="700" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#333" opacity="0.55">Air Force 1 · lateral · women's 8</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

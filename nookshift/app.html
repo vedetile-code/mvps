@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio — Nookshift</title>
+  <meta name="description" content="Restyle a photo of your room or garden and compare the result with a before-and-after slider.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;650;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="studio">
+  <header class="wrap site-header">
+    <a class="logo" href="index.html"><img src="assets/favicon.svg" alt=""> Nookshift</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#pricing">Pricing</a>
+      <a class="btn btn-ghost" href="index.html#waitlist">Waitlist</a>
+    </nav>
+  </header>
+
+  <div class="studio-main">
+    <aside class="tray">
+      <p class="eyebrow">Studio</p>
+      <h1 style="font-size:32px;margin-bottom:16px;">Restyle a photo</h1>
+
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Upload a room or garden photo">
+        <strong>Drop a photo here</strong>
+        <p class="fine" style="margin-top:6px;">or click to choose a JPG, PNG or WebP. A straight-on shot in daylight works best.</p>
+        <input id="file" type="file" accept="image/*" hidden>
+      </div>
+
+      <label>Or start with a sample</label>
+      <div class="samples" id="samples"></div>
+
+      <label for="kind-filter" style="margin-top:16px;">Style set</label>
+      <select id="kind-filter">
+        <option value="all">Rooms and gardens</option>
+        <option value="room">Rooms only</option>
+        <option value="garden">Gardens only</option>
+      </select>
+
+      <label>Looks</label>
+      <div class="style-picks" id="style-picks"></div>
+
+      <label for="notes">Notes for AI mode (optional)</label>
+      <textarea id="notes" placeholder="Keep the sofa. Warmer wood. Leave the window."></textarea>
+      <p class="fine">Notes are used only when a local API key is present. The public demo ignores them.</p>
+
+      <button class="btn" id="generate" type="button">Restyle this photo</button>
+    </aside>
+
+    <section class="workspace">
+      <div class="mode-banner">
+        <div>
+          <strong id="mode-label">Demo mode</strong>
+          <div id="mode-detail">Checking how this copy is running…</div>
+        </div>
+        <a class="btn btn-ghost" href="index.html#waitlist">Founding waitlist</a>
+      </div>
+
+      <div class="stage-card">
+        <div class="compare" id="compare">
+          <img id="source-img" class="layer" alt="Original photo" hidden>
+          <canvas id="after-canvas" class="layer after" hidden></canvas>
+          <div class="handle"><span class="knob">‹›</span></div>
+          <input type="range" min="0" max="100" value="0" aria-label="Drag to compare before and after">
+        </div>
+        <div class="pills">
+          <span>Before</span>
+          <span>Drag the slider</span>
+          <span>After</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-ghost" id="download" type="button" disabled>Download preview</button>
+        <a class="btn btn-ghost" href="mailto:timwvedco+nookshift@gmail.com?subject=Nookshift%20feedback">Send feedback</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/studio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

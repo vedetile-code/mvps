@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#dcc3a8"/>
+  
+  <ellipse cx="320" cy="720" rx="200" ry="22" fill="#000" opacity="0.08"/>
+  <rect x="80" y="180" width="480" height="420" rx="8" fill="#8a5334"/>
+  <path d="M80 560 L200 600 L80 600 Z" fill="#c9b08a" opacity="0.85"/>
+  <path d="M80 520 C90 560 120 590 160 600" stroke="#d9c7a6" stroke-width="10" fill="none" opacity="0.8"/>
+  <text x="320" y="360" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#f3e6d6">Corner / edge wear</text>
+  <text x="320" y="390" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#e8d4b8">Disclosed in every draft</text>
+  <text x="320" y="760" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#3a2a10" opacity="0.6">Flaw detail · demo illustration</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

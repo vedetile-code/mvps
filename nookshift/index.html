@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nookshift — See the new look on your actual room, then spend</title>
+  <meta name="description" content="Upload a photo of your room or garden, try a style, and compare the restyle before you buy paint, furniture or plants. Browser demo now; founding waitlist for AI restyles.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;650;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap site-header">
+    <a class="logo" href="index.html"><img src="assets/favicon.svg" alt=""> Nookshift</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="app.html">Studio</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#waitlist">Waitlist</a>
+      <a class="btn" href="app.html">Try the demo</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">Room and garden previews</p>
+        <h1>See the new look on your actual room, then spend.</h1>
+        <p class="lede">Upload a photo, pick a style, and compare the restyle against the room or garden you already have. Decide on the mood before you buy paint, furniture or plants.</p>
+        <div class="cta-row">
+          <a class="btn" href="app.html">Open the free studio</a>
+          <a class="btn btn-ghost" href="#waitlist">Join the founding waitlist</a>
+        </div>
+        <p class="fine">The public demo runs in your browser. Your photo is not uploaded. Founding plans will check out through Whop, Paddle or Dodo — processors that can pay a Bermuda seller.</p>
+      </div>
+      <div class="stage-card">
+        <div class="compare" id="hero-compare">
+          <canvas id="hero-before" class="layer" aria-label="Original illustrated living room"></canvas>
+          <canvas id="hero-after" class="layer after" aria-label="Coastal restyle of the same room"></canvas>
+          <div class="handle"><span class="knob">‹›</span></div>
+          <input type="range" min="0" max="100" value="52" aria-label="Drag to compare before and after">
+        </div>
+        <div class="pills">
+          <span>Before</span>
+          <span class="badge">Demo preview · <span id="hero-style-name">Coastal</span></span>
+          <span>After</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head">
+        <h2>Three steps, then a decision you can see.</h2>
+        <p>Built for homeowners, renters and gardeners who want a preview on the real space, not a generic mood board.</p>
+      </div>
+      <div class="steps">
+        <article class="card">
+          <div class="step-num">01</div>
+          <h3>Use your photo</h3>
+          <p>A clear shot of the room or garden, straight on, in ordinary daylight works best. Or start with one of the sample spaces.</p>
+        </article>
+        <article class="card">
+          <div class="step-num">02</div>
+          <h3>Pick a style</h3>
+          <p>Twelve room and garden looks — from Scandinavian and Japandi to a cottage garden or Mediterranean terrace.</p>
+        </article>
+        <article class="card">
+          <div class="step-num">03</div>
+          <h3>Compare, then spend</h3>
+          <p>Slide between before and after. Download the preview. Treat it as a planning aid, not a contractor drawing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head">
+        <h2>Styles for rooms and gardens</h2>
+        <p>The demo shifts color, light and mood on your photo. Full AI restyles — finishes and furnishings — will run when you hold a founding pass, or locally if you add your own API key.</p>
+      </div>
+      <div class="style-grid" id="style-grid"></div>
+    </section>
+
+    <section class="wrap">
+      <div class="notice">
+        <strong>What you are looking at</strong>
+        The public site is a working demo, not a finished AI renderer. It applies a style grade (white balance, contrast, tint, garden greens, vignette) in your browser so you can try the workflow on your own photo today. Furniture does not move in demo mode. No account, no card, and the photo stays on your device.
+      </div>
+    </section>
+
+    <section class="wrap" id="pricing">
+      <div class="section-head">
+        <h2>Simple prices, checkout that works from Bermuda</h2>
+        <p>Stripe is not available to a Bermuda seller, and this is software, not a human service. Paid plans will be sold through Whop, Paddle or Dodo once those accounts are approved. Nothing is charged until you complete that checkout. Comparable room-restyle apps list from about $9.99 a month to $49.99 a year.</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <div class="tag">Now</div>
+          <h3>Browser demo</h3>
+          <p class="price">$0 <em>today</em></p>
+          <ul>
+            <li>Unlimited color-and-light previews</li>
+            <li>Your own photos or sample rooms</li>
+            <li>Before and after slider, PNG download</li>
+            <li>No account, photo stays in the browser</li>
+          </ul>
+          <a class="btn btn-ghost" href="app.html">Open the studio</a>
+        </article>
+        <article class="price-card featured">
+          <div class="tag">Founding waitlist</div>
+          <h3>Founding year</h3>
+          <p class="price">$29 <em>per year</em></p>
+          <ul>
+            <li>Locked founding rate when checkout opens</li>
+            <li>40 AI restyles a month when the AI path ships</li>
+            <li>Rooms and gardens on the same pass</li>
+            <li>7-day refund after purchase, no questions asked</li>
+            <li>No auto-renew at the founding rate without a clear reminder</li>
+          </ul>
+          <a class="btn btn-clay" href="#waitlist">Email my place in line</a>
+        </article>
+        <article class="price-card">
+          <div class="tag">After launch</div>
+          <h3>Standard</h3>
+          <p class="price">$9 <em>/ month</em> or $49 <em>/ year</em></p>
+          <ul>
+            <li>40 AI restyles a month</li>
+            <li>Same studio, standard rate</li>
+            <li>Cancel any time on the monthly plan</li>
+            <li>Checkout via Whop, Paddle or Dodo</li>
+          </ul>
+          <a class="btn btn-ghost" href="#waitlist">Get launch notice</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="waitlist">
+      <div class="section-head">
+        <h2>Join the founding waitlist</h2>
+        <p>This form opens an email to <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a>. Nothing is sent until you send it from your own mail app. We do not take payment here.</p>
+      </div>
+      <form class="panel" id="waitlist-form">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <label for="interest">I want this for</label>
+        <select id="interest" name="interest">
+          <option value="rooms">Rooms</option>
+          <option value="gardens">Gardens</option>
+          <option value="rooms and gardens" selected>Rooms and gardens</option>
+        </select>
+        <button class="btn" type="submit">Email my place in line</button>
+        <p class="fine">Or write directly to timwvedco+nookshift@gmail.com with the subject “Nookshift waitlist”.</p>
+      </form>
+    </section>
+
+    <section class="wrap">
+      <div class="section-head">
+        <h2>Questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Is the public demo a full AI redesign?</summary>
+          <p>No. The live demo grades color, light and mood. It does not replace sofas or plants. That honesty is intentional: you can test the workflow on your photo today without uploading it. Full AI restyles need an API key in the local server, or a founding pass once checkout is live.</p>
+        </details>
+        <details>
+          <summary>How do I pay if I live in, or the seller is in, Bermuda?</summary>
+          <p>Paid software will go through Whop, Paddle or Dodo. Stripe is not offered in Bermuda, and Etsy shops cannot be opened from there. Human-labour marketplaces are not used for this product. Checkout links will be added only after those merchant accounts are approved. This page does not charge a card.</p>
+        </details>
+        <details>
+          <summary>Should I trust a restyle when I buy paint or furniture?</summary>
+          <p>No preview, demo or AI, is a substitute for samples, measurements, or a designer or contractor. Lighting and camera color can lie. Check every result against the real room before you spend.</p>
+        </details>
+        <details>
+          <summary>What happens to my photo?</summary>
+          <p>On this public demo, processing happens in your browser and the file is not uploaded. If you later run the local AI server, the photo is sent to the OpenAI API from your computer when you press Restyle. Do not upload photos you are not willing to send to that provider.</p>
+        </details>
+        <details>
+          <summary>Who is Nookshift for?</summary>
+          <p>An individual homeowner, renter or gardener. You are both the person who pays and the person who uses it. It is not sold as a tool for design firms, real-estate teams or hotels.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong>Nookshift</strong><br>
+        A preview tool for people changing a room or garden.<br>
+        Contact: <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a>
+      </div>
+      <div>
+        Demo only on this site. AI can invent finishes that are not there.<br>
+        Verify before you buy. Not a design or contracting service.
+      </div>
+    </div>
+  </footer>
+  <script src="js/studio.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

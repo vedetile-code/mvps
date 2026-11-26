@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#ece7dc"/>
+  
+  <ellipse cx="320" cy="720" rx="160" ry="22" fill="#000" opacity="0.08"/>
+  <path d="M250 120 C200 160 170 260 175 400 C180 560 220 680 320 700 C420 680 460 560 465 400 C470 260 440 160 390 120 Z" fill="#fff" stroke="#d0d0d0" stroke-width="3"/>
+  <path d="M300 160 L300 520 M340 160 L340 520" stroke="#111" stroke-width="2"/>
+  <path d="M300 200 L340 200 M298 250 L342 250 M296 300 L344 300 M296 350 L344 350 M298 400 L342 400 M300 450 L340 450" stroke="#111" stroke-width="3"/>
+  <ellipse cx="320" cy="150" rx="28" ry="16" fill="#f4f4f4" stroke="#ccc"/>
+  <path d="M230 480 C260 500 380 500 410 480" fill="none" stroke="#111" stroke-width="4"/>
+  <text x="320" y="760" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#333" opacity="0.55">Air Force 1 · top · gently used</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>

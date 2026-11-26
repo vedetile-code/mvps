@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  <rect width="640" height="800" fill="#dccdb8"/>
+  
+  <ellipse cx="320" cy="760" rx="200" ry="20" fill="#000" opacity="0.1"/>
+  <path d="M215 78 H425 L414 128 H226 Z" fill="#2f4f6f"/>
+  <rect x="302" y="90" width="36" height="16" rx="2" fill="#c9a227"/>
+  <path d="M320 128 V215" stroke="#243e58" stroke-width="3"/>
+  <path d="M226 128 C200 360 198 560 198 710 L298 722 C304 420 310 250 318 215 L318 128 Z" fill="#3e6588"/>
+  <path d="M414 128 C440 360 442 560 442 710 L342 722 C336 420 330 250 322 215 L322 128 Z" fill="#4a7196"/>
+  <path d="M236 138 l48 10 6 52 -52 -12 z" fill="#355873"/>
+  <path d="M404 138 l-48 10 -6 52 52 -12 z" fill="#3d6284"/>
+  <path d="M198 710 L298 722 L294 742 L202 728 Z" fill="#d7c4a6"/>
+  <path d="M442 710 L342 722 L346 742 L438 728 Z" fill="#d7c4a6"/>
+  <!-- stitching -->
+  <path d="M250 145 l30 6" stroke="#c9a227" stroke-width="1.2" fill="none"/>
+  <path d="M390 145 l-30 6" stroke="#c9a227" stroke-width="1.2" fill="none"/>
+  <text x="320" y="400" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#1a2a3a" opacity="0.45">Levi's 501 · front</text>
+
+  <rect x="16" y="16" width="88" height="28" fill="#c4452e"/>
+  <text x="60" y="35" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" font-weight="600" fill="#fbf8f2">DEMO</text>
+</svg>
