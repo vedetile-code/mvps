@@ -5,103 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TellMe Coach — practise UK show me / tell me questions out loud</title>
   <meta name="description" content="A practice examiner asks the official DVSA show me, tell me safety questions, follows up when an answer is thin, and shows you the official points you missed. Independent study aid, not affiliated with DVSA.">
+  <link rel="canonical" href="https://vedetile-code.github.io/mvps/tellme-coach/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TellMe Coach">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/tellme-coach/">
+  <meta property="og:title" content="TellMe Coach — practise UK show me / tell me questions out loud">
+  <meta property="og:description" content="A practice examiner asks the official show me, tell me safety questions out loud and shows you the official points you missed. Independent study aid, not affiliated with DVSA.">
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/tellme-coach/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#121C24">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
 </head>
 <body>
-  <div class="banner">This public site runs in <strong>demo mode</strong>. Scoring uses an on-device rubric. A local <code>OPENAI_API_KEY</code> is needed for AI scoring and is never committed or used here. £9 pilot passes are on sale (first 40).</div>
-  <div class="wrap">
-    <header class="site">
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="banner" aria-label="Demo mode notice">This public site runs in <strong>demo mode</strong>. Scoring uses an on-device rubric. A local <code>OPENAI_API_KEY</code> is needed for AI scoring and is never committed or used here. £9 pilot passes are on sale (first 40).</aside>
+  <header class="site-header" data-header>
+    <div class="wrap bar">
       <a class="brand" href="index.html">
-        <img class="mark" src="assets/logo.svg" alt="">
-        <div class="brand-name">TellMe <span>Coach</span></div>
+        <img class="mark" src="assets/logo.svg" alt="" width="36" height="36">
+        <span class="brand-name">TellMe <span>Coach</span></span>
       </a>
-      <nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="nav" id="nav-panel" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#waitlist">Waitlist</a>
-        <a class="btn btn-primary" href="practice.html">Try a free mock</a>
+        <a class="btn btn-sm" href="practice.html">Try a free mock</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero" style="padding-top: 3.2rem;">
-      <div>
-        <p class="kicker">UK car practical test · England, Scotland and Wales</p>
-        <h1>Practise your safety questions out loud, before test day.</h1>
-        <p class="lede">A practice examiner asks the official ‘tell me’ questions, follows up when an answer is thin, and shows you the official points you missed. The real test asks two of these. Knowing them on paper is not the same as saying them to an examiner.</p>
-        <div class="hero-actions">
-          <a class="btn btn-amber" href="practice.html">Start the free mock</a>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="kicker" data-reveal><span class="indicator" aria-hidden="true"></span>UK car practical test · England, Scotland and Wales</p>
+        <h1 data-words>Practise your safety questions <span class="amber">out loud</span>, before test day.</h1>
+        <p class="lede" data-reveal style="--d:3">A practice examiner asks the official ‘tell me’ questions, follows up when an answer is thin, and shows you the official points you missed. The real test asks two of these. Knowing them on paper is not the same as saying them to an examiner.</p>
+        <div class="hero-actions" data-reveal style="--d:4">
+          <a class="btn" href="practice.html">Start the free mock</a>
           <a class="btn btn-ghost" href="#waitlist" data-checkout="primary" data-buy-label="Get the £9 pilot pass">Join the £9 pilot waitlist</a>
         </div>
-        <p class="fine">One tell-me and one show-me question, like the real test. No account. No card. Not affiliated with DVSA.</p>
+        <p class="fine" data-reveal style="--d:5">One tell-me and one show-me question, like the real test. No account. No card. Not affiliated with DVSA.</p>
       </div>
-      <div class="hero-card">
-        <div class="exam-chip">Live practice preview</div>
-        <p class="q-preview">“Tell me how you’d check that the brakes are working before starting a journey.”</p>
-        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <p class="fine">The examiner speaks the question. You answer with your voice or by typing. The debrief quotes the official points, not a made-up script.</p>
-        <div class="mini-meta">
-          <span>14 official tell-me questions</span>
-          <span>7 show-me prompts</span>
-          <span>en-GB voice</span>
+
+      <div class="console" data-reveal style="--d:2" data-glow>
+        <div class="console-top">
+          <span class="exam-chip"><span class="rec" aria-hidden="true"></span>Live practice preview</span>
+          <svg class="lamps" viewBox="0 0 132 24" aria-hidden="true" focusable="false">
+            <g fill="none" stroke-width="1.6" stroke-linecap="round">
+              <g class="lamp l1" stroke="#F2A93B"><circle cx="12" cy="12" r="7"/><path d="M12 8v5M12 15.5v.5"/><path d="M3.5 6.5a11 11 0 0 0 0 11M20.5 6.5a11 11 0 0 1 0 11"/></g>
+              <g class="lamp l2" stroke="#8FA2AF"><path d="M38 17h16M40 17v-5a6 6 0 0 1 12 0v5"/><path d="M46 4v2M38.5 7l1.4 1.4M53.5 7l-1.4 1.4"/></g>
+              <g class="lamp l3" stroke="#E25A4C"><path d="M70 6c4 3 4 9 0 12M80 6c-4 3-4 9 0 12"/><circle cx="75" cy="12" r="3.2"/></g>
+              <g class="lamp l4" stroke="#8FA2AF"><path d="M96 9l6-4v14l-6-4h-3V9z"/><path d="M106 8.5a5 5 0 0 1 0 7"/></g>
+              <g class="lamp l5" stroke="#F2A93B"><path d="M116 15l8-8M118 7h6v6"/></g>
+            </g>
+          </svg>
         </div>
+        <blockquote class="q-preview" data-words>“Tell me how you’d check that the brakes are working before starting a journey.”</blockquote>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="fine">The examiner speaks the question. You answer with your voice or by typing. The debrief quotes the official points, not a made-up script.</p>
+        <ul class="mini-meta">
+          <li>14 official tell-me questions</li>
+          <li>7 show-me prompts</li>
+          <li>en-GB voice</li>
+        </ul>
       </div>
     </section>
+    <div class="road" aria-hidden="true"></div>
 
-    <div class="stats">
-      <div class="stat"><b>1.96 million</b><span>car practical tests in Great Britain in FY 2024–25 (DVSA annual report)</span></div>
-      <div class="stat"><b>Two questions</b><span>one ‘tell me’ before you drive, one ‘show me’ while you drive. A wrong answer is a driving fault; a dangerous show-me is a fail.</span></div>
-      <div class="stat"><b>£19 · 30 days</b><span>No auto-renew. Pilot pre-order listed at £9. Secure card checkout.</span></div>
-    </div>
+    <section class="wrap stats" aria-label="About the test">
+      <div class="stat" data-reveal><b>1.96 million</b><span>car practical tests in Great Britain in FY 2024–25 (DVSA annual report)</span></div>
+      <div class="stat" data-reveal style="--d:1"><b>Two questions</b><span>one ‘tell me’ before you drive, one ‘show me’ while you drive. A wrong answer is a driving fault; a dangerous show-me is a fail.</span></div>
+      <div class="stat" data-reveal style="--d:2"><b>£19 · 30 days</b><span>No auto-renew. Pilot pre-order listed at £9. Secure card checkout.</span></div>
+    </section>
 
-    <section id="how">
-      <h2>How a session works</h2>
-      <div class="grid-3">
-        <div class="card">
-          <div class="step-num">01 · Hear it</div>
+    <section class="wrap section" id="how">
+      <p class="eyebrow" data-reveal>Three steps</p>
+      <h2 data-reveal>How a session works</h2>
+      <ol class="steps">
+        <li class="card" data-reveal data-glow>
+          <span class="step-num">01 · Hear it</span>
           <h3>The examiner asks one official question.</h3>
           <p>Questions are taken from the published GOV.UK list, licensed under the Open Government Licence. Nothing is invented to pad the bank.</p>
-        </div>
-        <div class="card">
-          <div class="step-num">02 · Say it</div>
+        </li>
+        <li class="card" data-reveal style="--d:1" data-glow>
+          <span class="step-num">02 · Say it</span>
           <h3>You answer out loud, or type if the mic is unavailable.</h3>
           <p>If a required official point is missing, you get one follow-up — the way an examiner presses on a thin answer — then a score against the rubric.</p>
-        </div>
-        <div class="card">
-          <div class="step-num">03 · Check it</div>
+        </li>
+        <li class="card" data-reveal style="--d:2" data-glow>
+          <span class="step-num">03 · Check it</span>
           <h3>A debrief lists what was missing, with the official reference.</h3>
           <p>It will not predict a pass. It will not call itself DVSA-approved. It will tell you to confirm the current list and practise show-me controls in the test car with your instructor.</p>
-        </div>
-      </div>
+        </li>
+      </ol>
     </section>
 
-    <section>
-      <h2>Built from the public standard</h2>
+    <section class="wrap section">
+      <p class="eyebrow" data-reveal>Sources</p>
+      <h2 data-reveal>Built from the public standard</h2>
       <div class="grid-2">
-        <div class="card">
+        <div class="card" data-reveal>
           <h3>The official list, not a rumour sheet</h3>
           <p>Every tell-me model point is copied from the GOV.UK publication “Car ‘show me, tell me’ vehicle safety questions”, updated 4 December 2017, retrieved 26 November 2026. Contains public sector information licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</p>
           <p><a href="https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-questions/car-show-me-tell-me-vehicle-safety-questions">Read the official questions on GOV.UK</a></p>
         </div>
-        <div class="card">
+        <div class="card warn" data-reveal style="--d:1">
           <h3>What this is not</h3>
           <p>It is not the official test, not a DVSA product, and not a substitute for lessons. Show-me items have no official published model script — practice points describe a safe method only. Never practise show-me actions in a moving car except with an instructor, or on test.</p>
         </div>
       </div>
     </section>
 
-    <section id="pricing">
-      <h2>Pricing</h2>
+    <section class="wrap section" id="pricing">
+      <p class="eyebrow" data-reveal>One pass, no subscription</p>
+      <h2 data-reveal>Pricing</h2>
       <div class="price-table">
-        <div class="card">
+        <div class="card" data-reveal>
           <h3>Free mock</h3>
           <p>One official tell-me question and one show-me prompt, spoken and scored. No account. No card. Available now in demo mode.</p>
           <a class="btn btn-ghost" href="practice.html">Try it now</a>
         </div>
-        <div class="price">
+        <div class="price" data-reveal style="--d:1">
           <h3>30-day pass</h3>
           <div class="amount">£19 <small>or £9 for the first 40 pilot places</small></div>
           <ul>
@@ -111,15 +142,16 @@
             <li>Refund: email within 7 days of purchase for a full refund</li>
           </ul>
           <p class="fine">Payment is on a secure hosted card page; this site never sees your card.</p>
-          <a class="btn btn-amber" href="#waitlist" data-checkout="primary" data-buy-label="Get the £9 pilot pass">Join the pilot waitlist</a>
+          <a class="btn" href="#waitlist" data-checkout="primary" data-buy-label="Get the £9 pilot pass">Join the pilot waitlist</a>
         </div>
       </div>
     </section>
 
-    <section id="waitlist">
-      <h2>Pilot / pre-order waitlist</h2>
+    <section class="wrap section" id="waitlist">
+      <p class="eyebrow" data-reveal>Pilot places</p>
+      <h2 data-reveal>Pilot / pre-order waitlist</h2>
       <div class="grid-2">
-        <div class="card">
+        <div class="card" data-reveal>
           <p class="form-note"><strong>Nothing is charged here.</strong> Pressing the button opens a ready-to-send email reserving your place; we reply with your pass link. To reach the maker, write to <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>.</p>
           <form class="waitlist" id="waitlist-form">
             <label>Name
@@ -141,11 +173,11 @@
             <label>Anything we should know (optional)
               <textarea name="note" placeholder="Test centre, first language, or a question"></textarea>
             </label>
-            <button class="btn btn-primary" type="submit">Email my pilot request</button>
+            <button class="btn" type="submit">Email my pilot request</button>
             <p id="waitlist-status" class="fine" role="status"></p>
           </form>
         </div>
-        <div class="card">
+        <div class="card plain" data-reveal style="--d:1">
           <h3>Why a waitlist first</h3>
           <p>The official question list is free. You are paying, if you choose to, for rehearsal out loud and a scored debrief, not for access to secret questions. A short pilot tests whether that is worth £19 — or whether the free mock is enough.</p>
           <p>Contact and waitlist replies: <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>. No marketing emails will be sent from this demo.</p>
@@ -153,36 +185,40 @@
       </div>
     </section>
 
-    <section>
-      <h2>Questions</h2>
-      <div class="grid-2">
-        <div class="card">
+    <section class="wrap section">
+      <p class="eyebrow" data-reveal>Straight answers</p>
+      <h2 data-reveal>Questions</h2>
+      <div class="faq-grid">
+        <div class="qa" data-reveal>
           <h3>Is this approved by DVSA?</h3>
           <p>No. TellMe Coach is an independent study aid. It is not affiliated with, endorsed by, or approved by the Driver and Vehicle Standards Agency or any government department.</p>
         </div>
-        <div class="card">
+        <div class="qa" data-reveal style="--d:1">
           <h3>Will this make me pass?</h3>
           <p>No tool can say that. A missed tell-me or show-me is usually a driving fault; a dangerous show-me action can fail the test. Lessons, practice and the official list still come first.</p>
         </div>
-        <div class="card">
+        <div class="qa" data-reveal>
           <h3>Do I need an API key?</h3>
           <p>Not for this public demo. Demo scoring checks your answer against the official points on your device. AI scoring is optional on a local copy of the app when an <code>OPENAI_API_KEY</code> is set in the environment. Keys must never be pasted into the public site or committed to the repository.</p>
         </div>
-        <div class="card">
+        <div class="qa" data-reveal style="--d:1">
           <h3>Who is this for?</h3>
           <p>Learner drivers sitting the car practical test in England, Scotland or Wales, and anyone retaking. It is sold to the individual candidate, not to a driving school.</p>
         </div>
       </div>
     </section>
+  </main>
 
-    <footer>
+  <footer class="site-footer">
+    <div class="wrap">
       <p>TellMe Coach is a self-study practice tool. Always check the current official publication before your test: <a href="https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-questions/car-show-me-tell-me-vehicle-safety-questions">GOV.UK show me, tell me questions</a>. Contains public sector information licensed under the Open Government Licence v3.0.</p>
       <p>Contact: <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>. Payments use a secure hosted card checkout.</p>
       <p>© 2026 TellMe Coach. All product copy on this site, other than official quotations, is independent of DVSA.</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <script src="js/landing.js"></script>
   <script src="../checkout-config.js"></script>
   <script src="../cta.js" data-slug="tellme-coach" data-bar></script>
+  <script src="../assets/motion.js"></script>
 </body>
 </html>

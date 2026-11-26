@@ -5,98 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nookshift — See the new look on your actual room, then spend</title>
   <meta name="description" content="Upload a photo of your room or garden, try a style, and compare the restyle before you buy paint, furniture or plants. Browser demo now; founding waitlist for AI restyles.">
+  <link rel="canonical" href="https://vedetile-code.github.io/mvps/nookshift/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nookshift">
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/nookshift/">
+  <meta property="og:title" content="Nookshift — See the new look on your actual room, then spend">
+  <meta property="og:description" content="Upload a photo of your room or garden, try a style, and compare the restyle before you buy paint, furniture or plants.">
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/nookshift/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F3ECE1">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;650;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="wrap site-header">
-    <a class="logo" href="index.html"><img src="assets/favicon.svg" alt=""> Nookshift</a>
-    <nav class="nav" aria-label="Primary">
-      <a href="app.html">Studio</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#waitlist">Waitlist</a>
-      <a class="btn" href="app.html">Try the demo</a>
-    </nav>
+  <header class="site-header" data-header>
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28"> Nookshift</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="nav" id="nav-panel" aria-label="Primary">
+        <a href="app.html">Studio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#waitlist">Waitlist</a>
+        <a class="btn btn-sm" href="app.html">Try the demo</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="wrap hero">
-      <div>
-        <p class="eyebrow">Room and garden previews</p>
-        <h1>See the new look on your actual room, then spend.</h1>
-        <p class="lede">Upload a photo, pick a style, and compare the restyle against the room or garden you already have. Decide on the mood before you buy paint, furniture or plants.</p>
-        <div class="cta-row">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal>Room and garden previews</p>
+        <h1 data-words>See the new look on your <em>actual</em> room, then spend.</h1>
+        <p class="lede" data-reveal style="--d:3">Upload a photo, pick a style, and compare the restyle against the room or garden you already have. Decide on the mood before you buy paint, furniture or plants.</p>
+        <div class="cta-row" data-reveal style="--d:4">
           <a class="btn" href="app.html">Open the free studio</a>
           <a class="btn btn-ghost" href="#waitlist">Join the founding waitlist</a>
         </div>
-        <p class="fine">The public demo runs in your browser. Your photo is not uploaded. Founding year: $29 once, secure card checkout, 7-day refund.</p>
+        <p class="fine" data-reveal style="--d:5">The public demo runs in your browser. Your photo is not uploaded. Founding year: $29 once, secure card checkout, 7-day refund.</p>
       </div>
-      <div class="stage-card">
-        <div class="compare" id="hero-compare">
-          <canvas id="hero-before" class="layer" aria-label="Original illustrated living room"></canvas>
-          <canvas id="hero-after" class="layer after" aria-label="Coastal restyle of the same room"></canvas>
-          <div class="handle"><span class="knob">‹›</span></div>
-          <input type="range" min="0" max="100" value="52" aria-label="Drag to compare before and after">
+      <figure class="print" data-reveal style="--d:2">
+        <div class="mat">
+          <div class="compare" id="hero-compare">
+            <canvas id="hero-before" class="layer" role="img" aria-label="Original illustrated living room"></canvas>
+            <canvas id="hero-after" class="layer after" role="img" aria-label="Coastal restyle of the same room"></canvas>
+            <div class="sweep" aria-hidden="true"></div>
+            <div class="handle" aria-hidden="true"><span class="knob">‹ ›</span></div>
+            <input type="range" min="0" max="100" value="52" aria-label="Drag to compare before and after">
+          </div>
         </div>
-        <div class="pills">
+        <figcaption class="pills">
           <span>Before</span>
           <span class="badge">Demo preview · <span id="hero-style-name">Coastal</span></span>
           <span>After</span>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="wrap">
+    <div class="chips wrap" aria-hidden="true">
+      <span style="--c:#F3ECE1"></span><span style="--c:#D8C6AC"></span><span style="--c:#9C4A2B"></span><span style="--c:#56664E"></span><span style="--c:#2A2420"></span>
+    </div>
+
+    <section class="wrap section">
       <div class="section-head">
-        <h2>Three steps, then a decision you can see.</h2>
-        <p>Built for homeowners, renters and gardeners who want a preview on the real space, not a generic mood board.</p>
+        <p class="num-label" data-reveal>I · Method</p>
+        <h2 data-reveal>Three steps, then a decision you can see.</h2>
+        <p data-reveal style="--d:1">Built for homeowners, renters and gardeners who want a preview on the real space, not a generic mood board.</p>
       </div>
-      <div class="steps">
-        <article class="card">
-          <div class="step-num">01</div>
+      <ol class="steps">
+        <li class="step" data-reveal data-glow>
+          <span class="step-num">01</span>
           <h3>Use your photo</h3>
           <p>A clear shot of the room or garden, straight on, in ordinary daylight works best. Or start with one of the sample spaces.</p>
-        </article>
-        <article class="card">
-          <div class="step-num">02</div>
+        </li>
+        <li class="step" data-reveal style="--d:1" data-glow>
+          <span class="step-num">02</span>
           <h3>Pick a style</h3>
           <p>Twelve room and garden looks — from Scandinavian and Japandi to a cottage garden or Mediterranean terrace.</p>
-        </article>
-        <article class="card">
-          <div class="step-num">03</div>
+        </li>
+        <li class="step" data-reveal style="--d:2" data-glow>
+          <span class="step-num">03</span>
           <h3>Compare, then spend</h3>
           <p>Slide between before and after. Download the preview. Treat it as a planning aid, not a contractor drawing.</p>
-        </article>
-      </div>
+        </li>
+      </ol>
     </section>
 
-    <section class="wrap">
+    <section class="wrap section">
       <div class="section-head">
-        <h2>Styles for rooms and gardens</h2>
-        <p>The demo shifts color, light and mood on your photo. Full AI restyles — finishes and furnishings — will run when you hold a founding pass, or locally if you add your own API key.</p>
+        <p class="num-label" data-reveal>II · Palette</p>
+        <h2 data-reveal>Styles for rooms and gardens</h2>
+        <p data-reveal style="--d:1">The demo shifts color, light and mood on your photo. Full AI restyles — finishes and furnishings — will run when you hold a founding pass, or locally if you add your own API key.</p>
       </div>
       <div class="style-grid" id="style-grid"></div>
     </section>
 
-    <section class="wrap">
-      <div class="notice">
+    <section class="wrap section">
+      <aside class="notice" data-reveal>
         <strong>What you are looking at</strong>
-        The public site is a working demo, not a finished AI renderer. It applies a style grade (white balance, contrast, tint, garden greens, vignette) in your browser so you can try the workflow on your own photo today. Furniture does not move in demo mode. No account, no card, and the photo stays on your device.
-      </div>
+        <p>The public site is a working demo, not a finished AI renderer. It applies a style grade (white balance, contrast, tint, garden greens, vignette) in your browser so you can try the workflow on your own photo today. Furniture does not move in demo mode. No account, no card, and the photo stays on your device.</p>
+      </aside>
     </section>
 
-    <section class="wrap" id="pricing">
+    <section class="wrap section" id="pricing">
       <div class="section-head">
-        <h2>Simple prices, honest scope</h2>
-        <p>Use the browser demo free today. The founding year is $29 with a 7-day no-questions refund; founding members also get their first AI restyles done for them by email while the in-app AI path is finished. Comparable room-restyle apps list from about $9.99 a month to $49.99 a year.</p>
+        <p class="num-label" data-reveal>III · Pricing</p>
+        <h2 data-reveal>Simple prices, honest scope</h2>
+        <p data-reveal style="--d:1">Use the browser demo free today. The founding year is $29 with a 7-day no-questions refund; founding members also get their first AI restyles done for them by email while the in-app AI path is finished. Comparable room-restyle apps list from about $9.99 a month to $49.99 a year.</p>
       </div>
       <div class="price-grid">
-        <article class="price-card">
-          <div class="tag">Now</div>
+        <article class="price-card" data-reveal>
+          <p class="tag">Now</p>
           <h3>Browser demo</h3>
           <p class="price">$0 <em>today</em></p>
           <ul>
@@ -107,8 +130,8 @@
           </ul>
           <a class="btn btn-ghost" href="app.html">Open the studio</a>
         </article>
-        <article class="price-card featured">
-          <div class="tag">Founding waitlist</div>
+        <article class="price-card featured" data-reveal style="--d:1">
+          <p class="tag">Founding waitlist</p>
           <h3>Founding year</h3>
           <p class="price">$29 <em>per year</em></p>
           <ul>
@@ -118,10 +141,10 @@
             <li>7-day refund after purchase, no questions asked</li>
             <li>No auto-renew at the founding rate without a clear reminder</li>
           </ul>
-          <a class="btn btn-clay" href="#waitlist" data-checkout="primary" data-buy-label="Buy the founding year — $29">Email my place in line</a>
+          <a class="btn" href="#waitlist" data-checkout="primary" data-buy-label="Buy the founding year — $29">Email my place in line</a>
         </article>
-        <article class="price-card">
-          <div class="tag">After launch</div>
+        <article class="price-card" data-reveal style="--d:2">
+          <p class="tag">After launch</p>
           <h3>Standard</h3>
           <p class="price">$9 <em>/ month</em> or $49 <em>/ year</em></p>
           <ul>
@@ -135,12 +158,13 @@
       </div>
     </section>
 
-    <section class="wrap" id="waitlist">
+    <section class="wrap section split" id="waitlist">
       <div class="section-head">
-        <h2>Join the founding waitlist</h2>
-        <p>This form opens an email to <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a>. Nothing is sent until you send it from your own mail app. We do not take payment here.</p>
+        <p class="num-label" data-reveal>IV · Waitlist</p>
+        <h2 data-reveal>Join the founding waitlist</h2>
+        <p data-reveal style="--d:1">This form opens an email to <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a>. Nothing is sent until you send it from your own mail app. We do not take payment here.</p>
       </div>
-      <form class="panel" id="waitlist-form">
+      <form class="panel" id="waitlist-form" data-reveal style="--d:2">
         <div class="form-row">
           <div>
             <label for="name">Name</label>
@@ -162,9 +186,10 @@
       </form>
     </section>
 
-    <section class="wrap">
+    <section class="wrap section narrow">
       <div class="section-head">
-        <h2>Questions</h2>
+        <p class="num-label" data-reveal>V · Questions</p>
+        <h2 data-reveal>Questions</h2>
       </div>
       <div class="faq">
         <details open>
@@ -192,15 +217,15 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="wrap foot">
       <div>
-        <strong>Nookshift</strong><br>
-        A preview tool for people changing a room or garden.<br>
-        Contact: <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a>
+        <p class="foot-logo">Nookshift</p>
+        <p>A preview tool for people changing a room or garden.<br>
+        Contact: <a href="mailto:timwvedco+nookshift@gmail.com">timwvedco+nookshift@gmail.com</a></p>
       </div>
       <div>
-        Demo only on this site. AI can invent finishes that are not there.<br>
-        Verify before you buy. Not a design or contracting service.
+        <p>Demo only on this site. AI can invent finishes that are not there.<br>
+        Verify before you buy. Not a design or contracting service.</p>
       </div>
     </div>
   </footer>
@@ -208,5 +233,6 @@
   <script src="js/landing.js"></script>
   <script src="../checkout-config.js"></script>
   <script src="../cta.js" data-slug="nookshift" data-bar></script>
+  <script src="../assets/motion.js"></script>
 </body>
 </html>

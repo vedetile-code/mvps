@@ -3,55 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Five consumer demo sites</title>
-  <meta name="description" content="Static, demo-only previews of five consumer tools. No payments are taken on these pages, and no API keys are used in the public demos.">
+  <title>Five consumer tools — Nookshift, ListReady, TellMe Coach, Quire, ShiftReady</title>
+  <meta name="description" content="Five small consumer tools, each with a free browser demo: room restyle previews, reseller listing drafts, UK show me / tell me practice, KDP interior layouts, and human-checked RN application packs.">
+  <link rel="canonical" href="https://vedetile-code.github.io/mvps/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/">
+  <meta property="og:title" content="Five consumer tools, each with a free demo">
+  <meta property="og:description" content="Nookshift, ListReady, TellMe Coach, Quire and ShiftReady: five small tools, each with a free browser demo.">
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#EFEBE3">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
   <style>
-    :root { --ink: #1c1a16; --muted: #5c574e; --paper: #f3eee4; --card: #fffdf8; --line: rgba(28,26,22,.14); --accent: #9a3f18; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.5 "Source Sans 3", "Segoe UI", sans-serif; }
-    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0 80px; }
-    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: clamp(32px, 5vw, 44px); line-height: 1.15; margin: 0 0 12px; }
-    .lede { color: var(--muted); max-width: 38rem; margin: 0 0 36px; }
-    ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-    li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
-    li a.name { display: inline-block; font-weight: 700; color: var(--ink); text-decoration: none; font-size: 20px; }
-    li a.name:hover { color: var(--accent); }
-    li p { margin: 6px 0 0; color: var(--muted); font-size: 16px; }
-    .kicker { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
-    footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
-    footer a { color: var(--muted); }
+    :root { --paper: #EFEBE3; --ink: #191816; --muted: #57534C; --card: #FBFAF7; --accent: #8A3A1E; --line: rgba(25, 24, 22, .14); --ease: cubic-bezier(.2, .75, .2, 1); }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 "Geist", system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .06; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .wrap { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
+    header { padding: 28px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
+    .mark { font: 400 24px/1 "Instrument Serif", Georgia, serif; color: var(--ink); text-decoration: none; }
+    header nav a { color: var(--ink); font-size: 15px; display: inline-flex; min-height: 44px; align-items: center; }
+    .intro { padding: 80px 0 56px; max-width: 760px; }
+    .kicker { font: 600 12px/1 "Geist", sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 0 0 20px; }
+    h1 { font: 400 clamp(44px, 7vw, 84px)/1 "Instrument Serif", Georgia, serif; letter-spacing: -.02em; margin: 0; }
+    h1 em { color: var(--accent); }
+    .lede { color: var(--muted); font-size: 19px; max-width: 38rem; margin: 22px 0 0; }
+    ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+    li { border-bottom: 1px solid var(--line); }
+    .row { position: relative; display: grid; grid-template-columns: 56px 1.1fr 1.6fr 150px; gap: 24px; align-items: center; padding: 28px 0; color: inherit; text-decoration: none; transition: padding .4s var(--ease); }
+    .row::before { content: ""; position: absolute; inset: 0 -20px; background: var(--card); border-radius: 14px; opacity: 0; transform: scale(.98); transition: opacity .35s, transform .35s var(--ease); z-index: -1; }
+    .row:hover::before, .row:focus-visible::before { opacity: 1; transform: none; }
+    .n { font: italic 400 28px/1 "Instrument Serif", Georgia, serif; color: var(--muted); }
+    .name { font: 400 clamp(30px, 3.4vw, 42px)/1 "Instrument Serif", Georgia, serif; letter-spacing: -.01em; }
+    .name small { display: block; margin-top: 8px; font: 600 12px/1.2 "Geist", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .desc { color: var(--muted); margin: 0; font-size: 16px; }
+    .sw { display: flex; height: 36px; border-radius: 6px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); transition: transform .4s var(--ease); }
+    .sw i { flex: 1; }
+    .row:hover .sw { transform: translateX(-6px); }
+    .row:hover .name { color: var(--accent); }
+    .arrow { position: absolute; right: -4px; top: 50%; transform: translate(-8px, -50%); opacity: 0; transition: opacity .3s, transform .3s var(--ease); font-size: 20px; }
+    .row:hover .arrow { opacity: 1; transform: translate(14px, -50%); }
+    footer { margin: 72px 0 0; padding: 32px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    footer a { color: var(--ink); }
+    .motion [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: calc(var(--d, 0) * 80ms); }
+    .motion [data-reveal].in { opacity: 1; transform: none; }
+    .motion [data-words] .w { display: inline-block; opacity: 0; transform: translateY(.3em); transition: opacity .7s var(--ease), transform .7s var(--ease); transition-delay: calc(var(--i) * 70ms + 80ms); }
+    .motion [data-words].in .w { opacity: 1; transform: none; }
+    @media (max-width: 760px) {
+      .wrap { width: calc(100% - 36px); }
+      header { padding: 16px 0; }
+      .intro { padding: 48px 0 36px; }
+      .lede { font-size: 17px; }
+      .row { grid-template-columns: 34px 1fr; gap: 6px 14px; padding: 24px 0; }
+      .n { font-size: 22px; grid-row: span 3; align-self: start; padding-top: 4px; }
+      .desc, .sw { grid-column: 2; }
+      .sw { height: 22px; margin-top: 8px; }
+      .row:hover .sw { transform: none; }
+      .arrow { display: none; }
+      .row::before { inset: 0 -10px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
   </style>
 </head>
 <body>
-  <main>
-    <p class="kicker">Public demos only</p>
-    <h1>Five consumer tools, running as static demos.</h1>
-    <p class="lede">Each site works in the browser without an API key. Nothing here takes a card payment, and these pages do not send applications, listings, or exam results on your behalf.</p>
-    <ol>
-      <li>
-        <a class="name" href="nookshift/">Nookshift</a>
-        <p>See a new look on a photo of your actual room or garden, then decide what to spend. Browser demo now; founding waitlist for AI restyles.</p>
-      </li>
-      <li>
-        <a class="name" href="listready/">ListReady</a>
-        <p>Turn item photos and your notes into copy-ready listings for eBay, Poshmark, Mercari, Depop, and Vinted. Drafts only — it never posts or relists.</p>
-      </li>
-      <li>
-        <a class="name" href="tellme-coach/">TellMe Coach</a>
-        <p>Practise official UK driving-test “show me, tell me” safety questions out loud, with a debrief of the points you missed. Independent study aid, not affiliated with DVSA.</p>
-      </li>
-      <li>
-        <a class="name" href="quirepress/">Quire</a>
-        <p>Build print-ready KDP interiors and cover wraps for journals, planners, and coloring books, measured to published trim, bleed, and gutter rules.</p>
-      </li>
-      <li>
-        <a class="name" href="shiftready/">ShiftReady</a>
-        <p>A human-checked application pack for one registered-nurse job posting: resume, cover letter, interview questions, and a scored mock.</p>
-      </li>
-    </ol>
+  <div class="wrap">
+    <header>
+      <a class="mark" href="./">Five tools</a>
+      <nav aria-label="Primary"><a href="https://github.com/vedetile-code/mvps">Source on GitHub</a></nav>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="kicker" data-reveal>Free demos · secure checkout on each product page</p>
+        <h1 data-words>Five consumer tools, <em>each built for one buyer.</em></h1>
+        <p class="lede" data-reveal style="--d:3">Each site works in the browser without an API key. The demos never take a card, and these pages do not send applications, listings, or exam results on your behalf. Paid plans open on a secure hosted checkout from each product page.</p>
+      </section>
+      <ol>
+        <li data-reveal>
+          <a class="row" href="nookshift/">
+            <span class="n">01</span>
+            <span class="name">Nookshift<small>Homeowners · renters · gardeners</small></span>
+            <p class="desc">See a new look on a photo of your actual room or garden, then decide what to spend. Browser demo now; founding waitlist for AI restyles.</p>
+            <span class="sw" aria-hidden="true"><i style="background:#F3ECE1"></i><i style="background:#D8C6AC"></i><i style="background:#9C4A2B"></i><i style="background:#56664E"></i><i style="background:#2A2420"></i></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li data-reveal style="--d:1">
+          <a class="row" href="listready/">
+            <span class="n">02</span>
+            <span class="name">ListReady<small>Resellers</small></span>
+            <p class="desc">Turn item photos and your notes into copy-ready listings for eBay, Poshmark, Mercari, Depop, and Vinted. Drafts only — it never posts or relists.</p>
+            <span class="sw" aria-hidden="true"><i style="background:#E9DFCC"></i><i style="background:#FBF8F1"></i><i style="background:#A8301C"></i><i style="background:#2B4A7E"></i><i style="background:#1C1A17"></i></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li data-reveal style="--d:2">
+          <a class="row" href="tellme-coach/">
+            <span class="n">03</span>
+            <span class="name">TellMe Coach<small>UK learner drivers</small></span>
+            <p class="desc">Practise official UK driving-test “show me, tell me” safety questions out loud, with a debrief of the points you missed. Independent study aid, not affiliated with DVSA.</p>
+            <span class="sw" aria-hidden="true"><i style="background:#121C24"></i><i style="background:#8FA2AF"></i><i style="background:#F2A93B"></i><i style="background:#E25A4C"></i><i style="background:#F3EFE6"></i></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li data-reveal style="--d:3">
+          <a class="row" href="quirepress/">
+            <span class="n">04</span>
+            <span class="name">Quire<small>KDP self-publishers</small></span>
+            <p class="desc">Build print-ready KDP interiors and cover wraps for journals, planners, and coloring books, measured to published trim, bleed, and gutter rules.</p>
+            <span class="sw" aria-hidden="true"><i style="background:#F4EFE4"></i><i style="background:#CBC2B0"></i><i style="background:#7B2D26"></i><i style="background:#1E6A86"></i><i style="background:#1A1917"></i></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li data-reveal style="--d:4">
+          <a class="row" href="shiftready/">
+            <span class="n">05</span>
+            <span class="name">ShiftReady<small>Registered nurses</small></span>
+            <p class="desc">A human-checked application pack for one registered-nurse job posting: resume, cover letter, interview questions, and a scored mock.</p>
+            <span class="sw" aria-hidden="true"><i style="background:#F6F4EF"></i><i style="background:#D7E7E0"></i><i style="background:#A9552A"></i><i style="background:#0F3B3C"></i><i style="background:#132321"></i></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ol>
+    </main>
     <footer>
-      Demo hub for <a href="https://github.com/vedetile-code/mvps">vedetile-code/mvps</a>. Questions: <a href="mailto:timwvedco@gmail.com">timwvedco@gmail.com</a>.
+      <span>Demo hub for <a href="https://github.com/vedetile-code/mvps">vedetile-code/mvps</a>.</span>
+      <span>Questions: <a href="mailto:timwvedco@gmail.com">timwvedco@gmail.com</a></span>
     </footer>
-  </main>
+  </div>
+  <script src="assets/motion.js"></script>
 </body>
 </html>

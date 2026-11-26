@@ -5,206 +5,240 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ListReady — Copy-ready listings. You paste. We never post.</title>
   <meta name="description" content="ListReady turns item photos and your notes into a title, description, item specifics, and platform-specific drafts for eBay, Poshmark, Mercari, Depop, and Vinted, plus a price range and a manual sold-comps checklist. Drafts only. No bots, no auto-posting, no bulk relisting." />
+  <link rel="canonical" href="https://vedetile-code.github.io/mvps/listready/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ListReady" />
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/listready/" />
+  <meta property="og:title" content="ListReady — Copy-ready listings. You paste. We never post." />
+  <meta property="og:description" content="Item photos and notes into drafts for eBay, Poshmark, Mercari, Depop, and Vinted, plus a price range and a sold-comps checklist. Drafts only." />
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/listready/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#E9DFCC" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="wrap bar">
       <a class="wordmark" href="./">ListReady <small>Draft only</small></a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="nav" id="nav-panel" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-ghost" href="app/">Try the demo</a>
-        <a class="btn btn-ticket" href="#preorder">Pre-order $9/mo</a>
-      </div>
-    </nav>
+        <a class="btn btn-ghost btn-sm" href="app/">Try the demo</a>
+        <a class="btn btn-sm" href="#preorder">Pre-order $9/mo</a>
+      </nav>
+    </div>
+  </header>
 
-    <header class="hero">
-      <div>
-        <p class="eyebrow">For individual resellers</p>
-        <h1>Photo to a copy-ready listing. You paste. We never post.</h1>
-        <p class="lede">Upload a few photos and your notes. ListReady drafts a title, description, item specifics, and a version for each marketplace you sell on — eBay, Poshmark, Mercari, Depop, and Vinted — plus a suggested price range and a checklist so you can check sold comps yourself.</p>
-        <div class="hero-actions">
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span>For individual resellers</p>
+        <h1 data-words>Photo to a copy-ready listing. <span class="hl">You paste. We never post.</span></h1>
+        <p class="lede" data-reveal style="--d:3">Upload a few photos and your notes. ListReady drafts a title, description, item specifics, and a version for each marketplace you sell on — eBay, Poshmark, Mercari, Depop, and Vinted — plus a suggested price range and a checklist so you can check sold comps yourself.</p>
+        <div class="hero-actions" data-reveal style="--d:4">
           <a class="btn" href="app/">Try three sample items</a>
           <a class="btn btn-ghost" href="#preorder">Reserve founding pricing</a>
         </div>
-        <p class="fine">This public demo runs in demo mode. It does not log into marketplaces, post, relist, or charge a card. Founding plan is open: $9/month, cancel any time.</p>
+        <p class="fine" data-reveal style="--d:5">This public demo runs in demo mode. It does not log into marketplaces, post, relist, or charge a card. Founding plan is open: $9/month, cancel any time.</p>
       </div>
-      <aside class="ticket" aria-label="Example draft ticket">
+
+      <aside class="ticket" aria-label="Example draft ticket" data-reveal style="--d:2" data-glow>
+        <svg class="hangtag" viewBox="0 0 120 170" aria-hidden="true" focusable="false">
+          <path class="string" d="M60 0 C 58 18, 66 30, 60 44" fill="none" stroke="#1C1A17" stroke-width="1.4"/>
+          <path d="M22 62 L60 30 L98 62 L98 160 Q98 166 92 166 L28 166 Q22 166 22 160 Z" fill="#FBF8F1" stroke="#1C1A17" stroke-width="1.4"/>
+          <circle cx="60" cy="52" r="6" fill="#E9DFCC" stroke="#1C1A17" stroke-width="1.4"/>
+          <text x="60" y="98" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#1C1A17">LISTING</text>
+          <text x="60" y="128" text-anchor="middle" font-family="Archivo, sans-serif" font-size="19" font-weight="800" fill="#A8301C">$28–45</text>
+          <line x1="34" y1="144" x2="86" y2="144" stroke="#1C1A17" stroke-width="1" stroke-dasharray="2 3"/>
+        </svg>
         <div class="ticket-head">
           <strong>Listing ticket</strong>
           <span class="stamp-mark">Copy ready</span>
         </div>
         <dl>
-          <dt>Item</dt><dd>Levi’s 501 medium-wash jeans, 32×30</dd>
-          <dt>eBay title</dt><dd>Levi’s 501 Men’s Jeans Medium Wash Straight 32x30 Cotton</dd>
-          <dt>Vinted title</dt><dd>Levi’s 501 medium wash straight jeans 32x30</dd>
-          <dt>Range</dt><dd>$28–$45 · confirm with sold comps</dd>
+          <div><dt>Item</dt><dd>Levi’s 501 medium-wash jeans, 32×30</dd></div>
+          <div>
+            <dt>eBay title</dt>
+            <dd>Levi’s 501 Men’s Jeans Medium Wash Straight 32x30 Cotton
+              <span class="meter" style="--fill:.70" aria-hidden="true"><i></i></span><span class="count">56 / 80</span></dd>
+          </div>
+          <div>
+            <dt>Vinted title</dt>
+            <dd>Levi’s 501 medium wash straight jeans 32x30
+              <span class="meter" style="--fill:.43" aria-hidden="true"><i></i></span><span class="count">43 / 100</span></dd>
+          </div>
+          <div><dt>Range</dt><dd>$28–$45 · confirm with sold comps</dd></div>
         </dl>
         <div class="ticket-photos">
-          <img src="assets/levis-front.svg" alt="Demo photo of Levi’s 501 jeans, front" />
-          <img src="assets/levis-back.svg" alt="Demo photo of Levi’s 501 jeans, back" />
-          <img src="assets/levis-label.svg" alt="Demo photo of Levi’s 501 waist label" />
+          <img src="assets/levis-front.svg" alt="Demo photo of Levi’s 501 jeans, front" width="640" height="800" />
+          <img src="assets/levis-back.svg" alt="Demo photo of Levi’s 501 jeans, back" width="640" height="800" />
+          <img src="assets/levis-label.svg" alt="Demo photo of Levi’s 501 waist label" width="640" height="800" />
         </div>
       </aside>
-    </header>
-  </div>
+    </section>
 
-  <section class="section-rule" id="how">
-    <div class="wrap">
-      <p class="kicker">How it works</p>
-      <h2>Draft in one place. List by hand on each site.</h2>
-      <p class="lede">eBay Magical Listing and Poshmark Smart List AI already write listings for free on those two sites. ListReady is for the rest of the job: one set of photos into five marketplace-specific drafts, including Vinted, plus a price range you verify yourself.</p>
-      <div class="steps">
-        <article class="step">
-          <div class="num">01</div>
-          <h3>Upload photos and notes</h3>
-          <p>Add 3–8 photos and what you already know: brand, size, measurements, flaws, cost, and where you plan to sell.</p>
-        </article>
-        <article class="step">
-          <div class="num">02</div>
-          <h3>Review the draft</h3>
-          <p>You get a title, description, item specifics, a variant per platform with character counts, a price range, and a sold-comps checklist.</p>
-        </article>
-        <article class="step">
-          <div class="num">03</div>
-          <h3>You paste. We never post.</h3>
-          <p>Copy the fields into the marketplace yourself. ListReady has no bots, no auto-posting, and no bulk relisting — on purpose.</p>
-        </article>
-      </div>
-      <div class="platforms">
-        <span class="chip">eBay · 80-char title</span>
-        <span class="chip">Poshmark · 80-char title, 3 style tags</span>
-        <span class="chip">Mercari · 80 / 1,000 form caps</span>
-        <span class="chip">Depop · first line is the title, 5 hashtags</span>
-        <span class="chip">Vinted · 5–100 / 5–2,000</span>
-      </div>
-    </div>
-  </section>
+    <div class="tape" aria-hidden="true"><div class="tape-track"><span>eBay</span><span>Poshmark</span><span>Mercari</span><span>Depop</span><span>Vinted</span><span>You paste</span><span>We never post</span><span>eBay</span><span>Poshmark</span><span>Mercari</span><span>Depop</span><span>Vinted</span><span>You paste</span><span>We never post</span></div></div>
 
-  <section class="section-rule" id="output">
-    <div class="wrap grid-2">
-      <div>
-        <p class="kicker">What you get</p>
-        <h2>Every field you would type, already written for the platform.</h2>
-        <p>Each draft stays inside that marketplace’s typical limits, and the character count is on the field. Measurements and flaws are repeated on every version when you provided them. Uncertain details are flagged instead of invented.</p>
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="kicker" data-reveal>01 — How it works</p>
+        <h2 data-reveal>Draft in one place. List by hand on each site.</h2>
+        <p class="lede" data-reveal style="--d:1">eBay Magical Listing and Poshmark Smart List AI already write listings for free on those two sites. ListReady is for the rest of the job: one set of photos into five marketplace-specific drafts, including Vinted, plus a price range you verify yourself.</p>
+        <ol class="steps">
+          <li class="step" data-reveal data-glow>
+            <span class="num">01</span>
+            <h3>Upload photos and notes</h3>
+            <p>Add 3–8 photos and what you already know: brand, size, measurements, flaws, cost, and where you plan to sell.</p>
+          </li>
+          <li class="step" data-reveal style="--d:1" data-glow>
+            <span class="num">02</span>
+            <h3>Review the draft</h3>
+            <p>You get a title, description, item specifics, a variant per platform with character counts, a price range, and a sold-comps checklist.</p>
+          </li>
+          <li class="step" data-reveal style="--d:2" data-glow>
+            <span class="num">03</span>
+            <h3>You paste. We never post.</h3>
+            <p>Copy the fields into the marketplace yourself. ListReady has no bots, no auto-posting, and no bulk relisting — on purpose.</p>
+          </li>
+        </ol>
+        <ul class="platforms" aria-label="Platform limits">
+          <li class="chip">eBay · 80-char title</li>
+          <li class="chip">Poshmark · 80-char title, 3 style tags</li>
+          <li class="chip">Mercari · 80 / 1,000 form caps</li>
+          <li class="chip">Depop · first line is the title, 5 hashtags</li>
+          <li class="chip">Vinted · 5–100 / 5–2,000</li>
+        </ul>
       </div>
-      <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap: 12px;">
-        <div class="card"><h3>Title</h3><p>Keyword-led on eBay and Mercari; cleaner brand-colour-type wording on Vinted; first-line title on Depop.</p></div>
-        <div class="card"><h3>Description</h3><p>Facts from your photos and notes only: condition, measurements, materials, and disclosed flaws.</p></div>
-        <div class="card"><h3>Item specifics</h3><p>Brand, size, color, department, material, style, and condition — ready to enter as fields.</p></div>
-        <div class="card"><h3>Price + comps checklist</h3><p>A low / mid / high range, and steps to check sold listings yourself. We do not scrape marketplaces.</p></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section-rule" id="rules">
-    <div class="wrap">
-      <div class="callout safe">
-        <strong>Drafts only, by design</strong>
-        ListReady does not log into eBay, Poshmark, Mercari, Depop, or Vinted. It does not post, schedule, bump, favorite, or relist. Vinted’s terms prohibit using external software tools such as bots, scrapers, and crawlers on the site, and prohibit deleting and re-listing the same item multiple times or listing multiple items in bulk. Those features are not in this product and will not be added. You review every field and paste it yourself.
+    <section class="section" id="output">
+      <div class="wrap grid-2">
+        <div>
+          <p class="kicker" data-reveal>02 — What you get</p>
+          <h2 data-reveal>Every field you would type, already written for the platform.</h2>
+          <p class="body" data-reveal style="--d:1">Each draft stays inside that marketplace’s typical limits, and the character count is on the field. Measurements and flaws are repeated on every version when you provided them. Uncertain details are flagged instead of invented.</p>
+        </div>
+        <div class="fields">
+          <div class="field" data-reveal><h3>Title</h3><p>Keyword-led on eBay and Mercari; cleaner brand-colour-type wording on Vinted; first-line title on Depop.</p></div>
+          <div class="field" data-reveal style="--d:1"><h3>Description</h3><p>Facts from your photos and notes only: condition, measurements, materials, and disclosed flaws.</p></div>
+          <div class="field" data-reveal style="--d:2"><h3>Item specifics</h3><p>Brand, size, color, department, material, style, and condition — ready to enter as fields.</p></div>
+          <div class="field" data-reveal style="--d:3"><h3>Price + comps checklist</h3><p>A low / mid / high range, and steps to check sold listings yourself. We do not scrape marketplaces.</p></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section-rule" id="pricing">
-    <div class="wrap">
-      <p class="kicker">Pricing</p>
-      <h2>Founding pre-order: $9 a month for the first year.</h2>
-      <p class="lede">The planned regular price is $15 a month, or $144 a year ($12 a month). The founding plan holds $9 a month for your first 12 months. Checkout runs on Stripe; this page never sees your card.</p>
-      <div class="price-grid">
-        <article class="price-card featured" id="preorder">
-          <p class="eyebrow" style="color: var(--ticket);">Founding pre-order</p>
-          <div class="price">$9 <span>/ month</span></div>
-          <p>Locked for the first 12 months after checkout goes live, then $15 / month unless you cancel. Or $99 for the founding year.</p>
-          <ul>
-            <li>Photo-to-draft listings for eBay, Poshmark, Mercari, Depop, and Vinted</li>
-            <li>Item specifics, platform variants, and character counts</li>
-            <li>Suggested price range and a manual sold-comps checklist</li>
-            <li>You paste; the tool never posts</li>
-          </ul>
-          <p class="mvps-buy-row"><a class="btn btn-ticket" href="#waitlist-form" data-checkout="primary" data-buy-label="Start founding plan — $9/month">Reserve the $9 founding rate ↓</a> <a class="btn" href="#waitlist-form" data-checkout="year" data-buy-label="Or pay $99 for the founding year">Or $99 founding year ↓</a></p>
-          <form class="form" id="waitlist-form">
-            <div class="form-row">
-              <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required />
+    <section class="section" id="rules">
+      <div class="wrap">
+        <div class="callout" data-reveal>
+          <span class="stamp" aria-hidden="true">No bots</span>
+          <strong>Drafts only, by design</strong>
+          <p>ListReady does not log into eBay, Poshmark, Mercari, Depop, or Vinted. It does not post, schedule, bump, favorite, or relist. Vinted’s terms prohibit using external software tools such as bots, scrapers, and crawlers on the site, and prohibit deleting and re-listing the same item multiple times or listing multiple items in bulk. Those features are not in this product and will not be added. You review every field and paste it yourself.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <p class="kicker" data-reveal>03 — Pricing</p>
+        <h2 data-reveal>Founding pre-order: $9 a month for the first year.</h2>
+        <p class="lede" data-reveal style="--d:1">The planned regular price is $15 a month, or $144 a year ($12 a month). The founding plan holds $9 a month for your first 12 months. Checkout runs on Stripe; this page never sees your card.</p>
+        <div class="price-grid">
+          <article class="price-card featured" id="preorder" data-reveal>
+            <p class="eyebrow">Founding pre-order</p>
+            <div class="price">$9 <span>/ month</span></div>
+            <p>Locked for the first 12 months after checkout goes live, then $15 / month unless you cancel. Or $99 for the founding year.</p>
+            <ul>
+              <li>Photo-to-draft listings for eBay, Poshmark, Mercari, Depop, and Vinted</li>
+              <li>Item specifics, platform variants, and character counts</li>
+              <li>Suggested price range and a manual sold-comps checklist</li>
+              <li>You paste; the tool never posts</li>
+            </ul>
+            <p class="mvps-buy-row"><a class="btn" href="#waitlist-form" data-checkout="primary" data-buy-label="Start founding plan — $9/month">Reserve the $9 founding rate ↓</a> <a class="btn btn-ghost" href="#waitlist-form" data-checkout="year" data-buy-label="Or pay $99 for the founding year">Or $99 founding year ↓</a></p>
+            <form class="form" id="waitlist-form">
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div>
+                  <label for="email">Your email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
               </div>
               <div>
-                <label for="email">Your email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
+                <label for="platforms">Marketplaces you sell on</label>
+                <input id="platforms" name="platforms" type="text" placeholder="e.g. Vinted, eBay, Mercari" />
               </div>
+              <button class="btn" type="submit">Email my pre-order interest</button>
+              <p class="form-note">Opens your email app addressed to <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a>. We do not collect cards here, and this demo does not store your message on a server. Checkout is a secure hosted card page; this site never sees your card.</p>
+            </form>
+            <div class="success" id="waitlist-done" hidden>
+              If your email app opened, send that message to complete your interest note. You can also write directly to <strong>timwvedco+listready@gmail.com</strong> with the subject “ListReady pre-order interest.”
             </div>
-            <div>
-              <label for="platforms">Marketplaces you sell on</label>
-              <input id="platforms" name="platforms" type="text" placeholder="e.g. Vinted, eBay, Mercari" />
-            </div>
-            <button class="btn btn-ticket" type="submit">Email my pre-order interest</button>
-            <p class="form-note">Opens your email app addressed to <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a>. We do not collect cards here, and this demo does not store your message on a server. Checkout is a secure hosted card page; this site never sees your card.</p>
-          </form>
-          <div class="success" id="waitlist-done" hidden>
-            If your email app opened, send that message to complete your interest note. You can also write directly to <strong>timwvedco+listready@gmail.com</strong> with the subject “ListReady pre-order interest.”
-          </div>
-        </article>
-        <article class="price-card">
-          <p class="eyebrow">Regular price, after founding</p>
-          <div class="price">$15 <span>/ month</span></div>
-          <p>or $144 a year ($12 / month). Cancel anytime once billing is live. Refunds: request within 7 days of a paid period if the drafts are not useful.</p>
-          <h3>How payment works</h3>
-          <p>Card checkout on a secure hosted page (Stripe), with PayPal invoices available on request. Founding members can also email photos of their first items and get drafts back within 24 hours.</p>
-        </article>
+          </article>
+          <article class="price-card" data-reveal style="--d:1">
+            <p class="eyebrow">Regular price, after founding</p>
+            <div class="price">$15 <span>/ month</span></div>
+            <p>or $144 a year ($12 / month). Cancel anytime once billing is live. Refunds: request within 7 days of a paid period if the drafts are not useful.</p>
+            <h3>How payment works</h3>
+            <p>Card checkout on a secure hosted page (Stripe), with PayPal invoices available on request. Founding members can also email photos of their first items and get drafts back within 24 hours.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section-rule" id="faq">
-    <div class="wrap">
-      <p class="kicker">FAQ</p>
-      <h2>Straight answers.</h2>
-      <div class="faq">
-        <details open>
-          <summary>Does this post to eBay, Poshmark, or Vinted for me?</summary>
-          <p>No. It only writes drafts for you to copy. It will not post, relist, bump, or run a bot on any marketplace.</p>
-        </details>
-        <details>
-          <summary>How is this different from eBay’s or Poshmark’s free AI?</summary>
-          <p>Those tools are strong if you list only on that one site. ListReady is for sellers who cross-list, especially onto Vinted, Mercari, and Depop, and who want a price range with a checklist for checking sold comps by hand. If a side-by-side test shows testers finish faster with the free native tool, this product should stop.</p>
-        </details>
-        <details>
-          <summary>Do you look up sold prices automatically?</summary>
-          <p>No. Automatic sold-price lookup would mean scraping or logging into marketplaces, which we do not do. You get a starting range from the item details and a checklist to check sold listings yourself.</p>
-        </details>
-        <details>
-          <summary>Is the live demo using AI on my photos?</summary>
-          <p>The public GitHub Pages site is demo mode: three sample items with prepared drafts, and a notes-only fallback if you upload your own photos. Photo analysis needs an API key in a local server environment. No key is shipped with this site.</p>
-        </details>
-        <details>
-          <summary>Who is this for?</summary>
-          <p>Individual resellers and households selling their own secondhand items. It is not a tool for businesses to automate operations, and it is not a crosslisting bot.</p>
-        </details>
+    <section class="section" id="faq">
+      <div class="wrap narrow">
+        <p class="kicker" data-reveal>04 — FAQ</p>
+        <h2 data-reveal>Straight answers.</h2>
+        <div class="faq">
+          <details open>
+            <summary>Does this post to eBay, Poshmark, or Vinted for me?</summary>
+            <p>No. It only writes drafts for you to copy. It will not post, relist, bump, or run a bot on any marketplace.</p>
+          </details>
+          <details>
+            <summary>How is this different from eBay’s or Poshmark’s free AI?</summary>
+            <p>Those tools are strong if you list only on that one site. ListReady is for sellers who cross-list, especially onto Vinted, Mercari, and Depop, and who want a price range with a checklist for checking sold comps by hand. If a side-by-side test shows testers finish faster with the free native tool, this product should stop.</p>
+          </details>
+          <details>
+            <summary>Do you look up sold prices automatically?</summary>
+            <p>No. Automatic sold-price lookup would mean scraping or logging into marketplaces, which we do not do. You get a starting range from the item details and a checklist to check sold listings yourself.</p>
+          </details>
+          <details>
+            <summary>Is the live demo using AI on my photos?</summary>
+            <p>The public GitHub Pages site is demo mode: three sample items with prepared drafts, and a notes-only fallback if you upload your own photos. Photo analysis needs an API key in a local server environment. No key is shipped with this site.</p>
+          </details>
+          <details>
+            <summary>Who is this for?</summary>
+            <p>Individual resellers and households selling their own secondhand items. It is not a tool for businesses to automate operations, and it is not a crosslisting bot.</p>
+          </details>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="wrap foot-grid">
       <div>
         <a class="wordmark" href="./">ListReady <small>Draft only</small></a>
         <p>A listing assistant for individual resellers. Consumer-first: the seller is the payer and the user.</p>
       </div>
       <div>
-        <strong>Product</strong><br />
-        <a href="app/">Open the demo</a><br />
+        <p class="foot-h">Product</p>
+        <p><a href="app/">Open the demo</a><br />
         <a href="#pricing">Pricing</a><br />
-        <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a>
+        <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a></p>
       </div>
       <div>
-        <strong>Payments</strong>
+        <p class="foot-h">Payments</p>
         <p>Secure hosted card checkout. No charges inside the demo.</p>
       </div>
     </div>
@@ -215,5 +249,6 @@
   <script src="landing.js"></script>
   <script src="../checkout-config.js"></script>
   <script src="../cta.js" data-slug="listready" data-bar></script>
+  <script src="../assets/motion.js"></script>
 </body>
 </html>

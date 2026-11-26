@@ -5,64 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ShiftReady — Human-checked RN application packs</title>
   <meta name="description" content="A tailored resume, cover letter, and interview pack for one hospital or travel RN posting. AI drafts from your facts. A person checks every license, date, and number before it goes out.">
+  <link rel="canonical" href="https://vedetile-code.github.io/mvps/shiftready/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ShiftReady">
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/shiftready/">
+  <meta property="og:title" content="ShiftReady — Human-checked RN application packs">
+  <meta property="og:description" content="A tailored resume, cover letter, and interview pack for one RN posting. AI drafts from your facts; a person checks every license, date, and number.">
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/shiftready/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0F3B3C">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%231c453c' width='64' height='64' rx='12'/><text x='32' y='44' text-anchor='middle' font-size='28' fill='%23f3eee4' font-family='Georgia'>SR</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%230F3B3C' width='64' height='64' rx='12'/><text x='32' y='44' text-anchor='middle' font-size='28' fill='%23F6F4EF' font-family='Georgia'>SR</text></svg>">
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
 </head>
 <body>
-  <header class="wrap">
-    <nav class="nav">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="wrap bar">
       <a class="brand" href="index.html"><strong>SHIFTREADY</strong><span>For registered nurses</span></a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="nav" id="nav-panel" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a class="btn ghost" href="app.html">Open the demo</a>
-        <a class="btn copper" href="#order">Order a pack</a>
-      </div>
-    </nav>
+        <a class="btn ghost btn-sm" href="app.html">Open the demo</a>
+        <a class="btn copper btn-sm" href="#order">Order a pack</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="wrap hero">
-      <div>
-        <p class="eyebrow">One occupation. One posting. A human review gate.</p>
-        <h1>A human-checked application pack for one RN posting.</h1>
-        <p class="lede">AI drafts your resume, cover letter, and interview prep from the facts you supply. A person checks every license, date, and number before anything goes to an employer. Nothing is invented to look like a better fit.</p>
-        <div class="hero-actions">
-          <a class="btn copper" href="app.html">See a sample pack</a>
-          <a class="btn ghost" href="#pricing">View $19, $49, and $99 packs</a>
+  <main id="main">
+    <section class="hero-band">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>One occupation. One posting. A human review gate.</p>
+          <h1 data-words>A <em>human-checked</em> application pack for one RN posting.</h1>
+          <p class="lede" data-reveal style="--d:3">AI drafts your resume, cover letter, and interview prep from the facts you supply. A person checks every license, date, and number before anything goes to an employer. Nothing is invented to look like a better fit.</p>
+          <div class="hero-actions" data-reveal style="--d:4">
+            <a class="btn copper" href="app.html">See a sample pack</a>
+            <a class="btn ghost-light" href="#pricing">View $19, $49, and $99 packs</a>
+          </div>
+          <p class="hero-note" data-reveal style="--d:5">This public site runs in demo mode on a sample med-surg RN applying to a PCU role. Live drafting needs a local API key. Orders are fulfilled as a human-reviewed service, paid through Fiverr or PayPal.</p>
         </div>
-        <p class="hero-note">This public site runs in demo mode on a sample med-surg RN applying to a PCU role. Live drafting needs a local API key. Orders are fulfilled as a human-reviewed service, paid through Fiverr or PayPal.</p>
+        <div class="hero-side">
+          <figure class="clipboard" data-reveal style="--d:2" aria-labelledby="gate-title">
+            <div class="clip" aria-hidden="true"></div>
+            <figcaption class="clip-title" id="gate-title">Human review gate</figcaption>
+            <ol class="checks">
+              <li style="--k:0"><span class="box" aria-hidden="true"></span>Licenses match your materials</li>
+              <li style="--k:1"><span class="box" aria-hidden="true"></span>Employers and dates match</li>
+              <li style="--k:2"><span class="box" aria-hidden="true"></span>Every number comes from your intake</li>
+              <li style="--k:3"><span class="box" aria-hidden="true"></span>No certification added</li>
+              <li style="--k:4" class="sign"><span class="box" aria-hidden="true"></span>Reviewer signs off, then delivery</li>
+            </ol>
+            <svg class="ecg" viewBox="0 0 400 48" aria-hidden="true" focusable="false"><path pathLength="1" d="M0 30 H120 L132 30 L140 18 L148 30 L160 30 L168 4 L178 44 L186 30 L204 30 L214 22 L224 30 H400" fill="none" stroke="#A9552A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          </figure>
+          <aside class="shift-card" data-reveal style="--d:3">
+            <h2>Built for hospital and travel RNs</h2>
+            <p>The niche is registered nurses changing units, taking a travel or relocation contract, or applying after a first staff year — not a general resume mill.</p>
+            <div class="shift-grid">
+              <div class="shift-cell"><b>48h</b><span>Delivery</span></div>
+              <div class="shift-cell"><b>$19</b><span>Pilot</span></div>
+              <div class="shift-cell"><b>20–40m</b><span>Human review</span></div>
+            </div>
+            <p class="shift-foot">U.S. BLS Occupational Outlook Handbook, last modified 29 Oct 2026: 3,465,400 RN jobs in 2025 and about 180,800 openings a year on average from 2025 to 2035. That volume, plus licenses and certifications that must not be fabricated, is why this pack is occupation-specific.</p>
+          </aside>
+        </div>
       </div>
-      <aside class="shift-card">
-        <h2>Built for hospital and travel RNs</h2>
-        <p>The niche is registered nurses changing units, taking a travel or relocation contract, or applying after a first staff year — not a general resume mill.</p>
-        <div class="shift-grid">
-          <div class="shift-cell"><b>48h</b><span>Delivery</span></div>
-          <div class="shift-cell"><b>$19</b><span>Pilot</span></div>
-          <div class="shift-cell"><b>20–40m</b><span>Human review</span></div>
-        </div>
-        <p class="shift-foot">U.S. BLS Occupational Outlook Handbook, last modified 29 Oct 2026: 3,465,400 RN jobs in 2025 and about 180,800 openings a year on average from 2025 to 2035. That volume, plus licenses and certifications that must not be fabricated, is why this pack is occupation-specific.</p>
-      </aside>
     </section>
 
     <section class="wrap" id="pack">
-      <p class="section-kicker">What you get</p>
-      <h2>A pack you can send, and a review you can see.</h2>
-      <p class="section-intro">Every paid order is limited to one job posting. The draft is only as strong as the facts in your current resume and intake. Gaps stay visible.</p>
+      <p class="section-kicker" data-reveal>What you get</p>
+      <h2 data-reveal>A pack you can send, and a review you can see.</h2>
+      <p class="section-intro" data-reveal style="--d:1">Every paid order is limited to one job posting. The draft is only as strong as the facts in your current resume and intake. Gaps stay visible.</p>
       <div class="cards">
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:0">
           <h3>Tailored resume</h3>
           <p>Summary, bullet order, and skills reordered to the posting. Employer names, dates, licenses, and numbers must already be in your materials.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:1">
           <h3>Cover letter</h3>
           <p>One page, written in your voice from your facts. If you have only floated to a unit, the letter says so. No invented connection to the hospital.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:2">
           <h3>Interview prep</h3>
           <p>The $49 pack adds 30 likely questions. The $99 pack adds an 8-question scored mock with suggested answers and a rubric. Practice scores are not a hiring prediction.</p>
         </article>
@@ -70,23 +98,24 @@
     </section>
 
     <section class="wrap" id="how">
-      <p class="section-kicker">How it works</p>
-      <h2>AI drafts. A person signs off.</h2>
+      <p class="section-kicker" data-reveal>How it works</p>
+      <h2 data-reveal>AI drafts. A person signs off.</h2>
       <div class="steps">
-        <div class="step"><div class="num">01</div><div><h3>You pay by card, PayPal, or Fiverr</h3><p>Pick a pack and pay on a secure checkout page, or ask for a PayPal invoice. Work starts once payment clears.</p></div></div>
-        <div class="step"><div class="num">02</div><div><h3>You send a resume, the posting, and an intake</h3><p>The intake collects achievements with numbers, licenses, and anything you do not want claimed. That last list is as important as the first.</p></div></div>
-        <div class="step"><div class="num">03</div><div><h3>Software extracts requirements and drafts from your facts</h3><p>Requirements are mapped as supported, partial, or gap. The draft cannot add a certification, employer, or metric that is not in your inputs.</p></div></div>
-        <div class="step"><div class="num">04</div><div><h3>A human review checklist has to pass</h3><p>Twenty to forty minutes of review. Automated fact flags are fixed first. The pack is not delivered until the reviewer signs off.</p></div></div>
-        <div class="step"><div class="num">05</div><div><h3>You receive files within 48 hours</h3><p>Markdown and a print-ready layout for the resume and letter, plus questions or a scored mock depending on the pack. One revision is included if a fact was missed.</p></div></div>
+        <span class="steps-line" aria-hidden="true"></span>
+        <div class="step" data-reveal style="--d:0"><div class="num">01</div><div><h3>You pay by card, PayPal, or Fiverr</h3><p>Pick a pack and pay on a secure checkout page, or ask for a PayPal invoice. Work starts once payment clears.</p></div></div>
+        <div class="step" data-reveal style="--d:1"><div class="num">02</div><div><h3>You send a resume, the posting, and an intake</h3><p>The intake collects achievements with numbers, licenses, and anything you do not want claimed. That last list is as important as the first.</p></div></div>
+        <div class="step" data-reveal style="--d:2"><div class="num">03</div><div><h3>Software extracts requirements and drafts from your facts</h3><p>Requirements are mapped as supported, partial, or gap. The draft cannot add a certification, employer, or metric that is not in your inputs.</p></div></div>
+        <div class="step" data-reveal style="--d:3"><div class="num">04</div><div><h3>A human review checklist has to pass</h3><p>Twenty to forty minutes of review. Automated fact flags are fixed first. The pack is not delivered until the reviewer signs off.</p></div></div>
+        <div class="step" data-reveal style="--d:4"><div class="num">05</div><div><h3>You receive files within 48 hours</h3><p>Markdown and a print-ready layout for the resume and letter, plus questions or a scored mock depending on the pack. One revision is included if a fact was missed.</p></div></div>
       </div>
     </section>
 
     <section class="wrap" id="pricing">
-      <p class="section-kicker">Pricing</p>
-      <h2>A $19 pilot, then two packs.</h2>
-      <p class="section-intro">The pilot is limited to the first five paying clients and exists to test delivery, not to discount the work indefinitely. Prices are in U.S. dollars. This is a service, not a subscription.</p>
+      <p class="section-kicker" data-reveal>Pricing</p>
+      <h2 data-reveal>A $19 pilot, then two packs.</h2>
+      <p class="section-intro" data-reveal style="--d:1">The pilot is limited to the first five paying clients and exists to test delivery, not to discount the work indefinitely. Prices are in U.S. dollars. This is a service, not a subscription.</p>
       <div class="price-grid">
-        <article class="price">
+        <article class="price" data-reveal>
           <div class="name">Pilot · 5 slots</div>
           <div class="amount">$19</div>
           <ul>
@@ -98,7 +127,7 @@
           </ul>
           <a class="btn ghost" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2419%20pilot%20request" data-checkout="primary" data-buy-label="Pay $19 — claim a pilot slot">Request a pilot invoice</a>
         </article>
-        <article class="price featured">
+        <article class="price featured" data-reveal style="--d:1">
           <div class="name">Standard · Application pack</div>
           <div class="amount">$49</div>
           <ul>
@@ -110,7 +139,7 @@
           </ul>
           <a class="btn" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2449%20Application%20pack" data-checkout="application" data-buy-label="Pay $49 — Application pack">Order the $49 pack</a>
         </article>
-        <article class="price">
+        <article class="price" data-reveal style="--d:2">
           <div class="name">Plus · Interview pack</div>
           <div class="amount">$99</div>
           <ul>
@@ -126,18 +155,18 @@
     </section>
 
     <section class="wrap" id="order">
-      <p class="section-kicker">How to pay</p>
-      <h2>Card, PayPal, or Fiverr.</h2>
+      <p class="section-kicker" data-reveal>How to pay</p>
+      <h2 data-reveal>Card, PayPal, or Fiverr.</h2>
       <div class="cards">
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:0">
           <h3>Fiverr</h3>
           <p>The intended storefront for the $49 and $99 packs once the gig is live. Fiverr keeps a 20% seller fee. A gig listing has not been published yet; this page will be updated with the URL when it is.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:1">
           <h3>PayPal invoice</h3>
           <p>Used for the $19 pilot and as a backup for the packs. Email <a href="mailto:timwvedco+shiftready@gmail.com">timwvedco+shiftready@gmail.com</a> with the pack you want, and you will receive an invoice before work starts. No card details are collected on this site.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal data-glow style="--d:2">
           <h3>Card checkout</h3>
           <p>The Pay buttons above open Stripe’s secure checkout. Add your job posting link there; after paying you’ll see exactly what to send. This site never sees your card.</p>
         </article>
@@ -146,8 +175,8 @@
     </section>
 
     <section class="wrap-narrow faq" id="faq">
-      <p class="section-kicker">FAQ</p>
-      <h2>Plain answers</h2>
+      <p class="section-kicker" data-reveal>FAQ</p>
+      <h2 data-reveal>Plain answers</h2>
       <details open>
         <summary>Will this get me the job?</summary>
         <p>No promise of that is made. The work is a clearer, honest application for one posting, plus interview practice. Callbacks depend on the employer, the market, and your actual experience.</p>
@@ -167,7 +196,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer site-footer">
     <div class="wrap row">
       <div>
         <strong>ShiftReady</strong> is a human-checked RN application service in pilot. It is not affiliated with any hospital, board of nursing, or credentialing body.<br>
@@ -180,5 +209,6 @@
   </footer>
   <script src="../checkout-config.js"></script>
   <script src="../cta.js" data-slug="shiftready" data-bar></script>
+  <script src="../assets/motion.js"></script>
 </body>
 </html>

@@ -9,83 +9,123 @@
   <meta property="og:title" content="Quire — Print-ready KDP interiors">
   <meta property="og:description" content="Journals, planners, and coloring books laid out to Amazon KDP trim, bleed, gutter, and spine specs.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quire">
+  <meta property="og:url" content="https://vedetile-code.github.io/mvps/quirepress/">
+  <meta property="og:image" content="https://vedetile-code.github.io/mvps/quirepress/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F4EFE4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script>(function(d){if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("motion");setTimeout(function(){if(!window.__motionOK)d.classList.remove("motion")},4000)}})(document.documentElement)</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <div class="wrap site-header">
+  <header class="site-header" data-header>
+    <div class="wrap bar">
       <a class="wordmark" href="index.html">Quire<span>KDP interiors</span></a>
-      <nav aria-label="Primary">
-        <a class="hide-sm" href="#how">How it works</a>
-        <a class="hide-sm" href="#types">Book types</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="nav" id="nav-panel" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#types">Book types</a>
         <a href="#pricing">Pricing</a>
-        <a class="btn ghost" href="app.html">Open the studio</a>
-        <a class="btn" href="#waitlist" data-open-waitlist>Join the waitlist</a>
+        <a class="btn ghost btn-sm" href="app.html">Open the studio</a>
+        <a class="btn btn-sm" href="#waitlist" data-open-waitlist>Join the waitlist</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <div class="wrap hero">
-      <div>
-        <p class="kicker">For self-publishers on Amazon KDP</p>
-        <h1>Interiors that fit the trim, not just the page.</h1>
-        <p class="lede">Quire lays out journals, planners, and coloring books to Amazon’s paperback rules: gutter by page count, outside margins, bleed, and a full cover wrap with a reserved barcode box.</p>
-        <div class="btn-row">
+      <div class="hero-copy">
+        <p class="kicker" data-reveal>For self-publishers on Amazon KDP</p>
+        <h1 data-words>Interiors that fit the trim, <em>not just the page.</em></h1>
+        <p class="lede" data-reveal style="--d:3">Quire lays out journals, planners, and coloring books to Amazon’s paperback rules: gutter by page count, outside margins, bleed, and a full cover wrap with a reserved barcode box.</p>
+        <div class="btn-row" data-reveal style="--d:4">
           <a class="btn" href="app.html">Try the free studio</a>
           <a class="btn ghost" href="#waitlist" data-open-waitlist>Founder pre-order waitlist</a>
         </div>
-        <p class="fine">The studio runs in your browser, including this public demo. No account required. Founder pricing is open now. Quire is not affiliated with Amazon.</p>
+        <p class="fine" data-reveal style="--d:5">The studio runs in your browser, including this public demo. No account required. Founder pricing is open now. Quire is not affiliated with Amazon.</p>
       </div>
-      <div class="spread-mock" aria-hidden="true">
-        <div class="gutter-tag">gutter</div>
-        <div class="spread-pages">
-          <div class="pg verso">
-            <div class="safe">
-              <h4>Morning Pages</h4>
-              <div class="rule-lines">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              </div>
-            </div>
-            <span class="folio">12</span>
-          </div>
-          <div class="pg recto">
-            <div class="safe">
-              <h4>Date _______________</h4>
-              <div class="rule-lines">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              </div>
-            </div>
-            <span class="folio">13</span>
-          </div>
-        </div>
-        <p class="caption-mock">Live preview shows bleed, trim, and the safe area before you export.</p>
-      </div>
+      <figure class="proof" data-reveal style="--d:2">
+        <svg class="spread" viewBox="60 14 530 426" role="img" aria-labelledby="spread-title spread-desc">
+          <title id="spread-title">Proof of a 6 × 9 in journal spread</title>
+          <desc id="spread-desc">Two facing journal pages, 12 and 13, with the trim line, a 0.125 in bleed on the outside edges only, a 0.375 in gutter at the spine and a dashed safe area.</desc>
+          <defs>
+            <pattern id="rules" width="10" height="17" patternUnits="userSpaceOnUse"><line x1="0" y1="16.5" x2="10" y2="16.5" stroke="#CBC2B0" stroke-width="1"/></pattern>
+          </defs>
+          <!-- bleed (outside edges only) -->
+          <rect class="bleed" x="104" y="64" width="392" height="316" fill="rgba(30,106,134,.07)" stroke="#1E6A86" stroke-width="1" stroke-dasharray="4 4"/>
+          <!-- pages -->
+          <rect x="112" y="72" width="188" height="300" fill="#F4EFE4"/>
+          <rect x="300" y="72" width="188" height="300" fill="#F4EFE4"/>
+          <!-- gutter band -->
+          <rect class="gutter" x="288" y="72" width="24" height="300" fill="rgba(123,45,38,.10)"/>
+          <line x1="300" y1="72" x2="300" y2="372" stroke="#1A1917" stroke-width=".8" opacity=".45"/>
+          <!-- safe areas + ruled lines -->
+          <rect x="126" y="92" width="162" height="262" fill="url(#rules)" opacity=".9"/>
+          <rect x="312" y="92" width="162" height="262" fill="url(#rules)" opacity=".9"/>
+          <rect class="draw" pathLength="1" x="126" y="92" width="162" height="262" fill="none" stroke="#1A1917" stroke-width=".7" stroke-dasharray="3 3" opacity=".55"/>
+          <rect class="draw" pathLength="1" x="312" y="92" width="162" height="262" fill="none" stroke="#1A1917" stroke-width=".7" stroke-dasharray="3 3" opacity=".55"/>
+          <text x="134" y="88" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#1A1917">Morning Pages</text>
+          <text x="320" y="88" font-family="Newsreader, Georgia, serif" font-size="13" font-style="italic" fill="#1A1917">Date _______________</text>
+          <text x="128" y="366" font-family="IBM Plex Mono, monospace" font-size="9" fill="#1A1917">12</text>
+          <text x="466" y="366" font-family="IBM Plex Mono, monospace" font-size="9" fill="#1A1917">13</text>
+          <!-- trim -->
+          <rect class="trim draw" pathLength="1" x="112" y="72" width="376" height="300" fill="none" stroke="#1A1917" stroke-width="1.2"/>
+          <!-- crop marks -->
+          <g stroke="#1A1917" stroke-width=".9">
+            <path d="M112 50v-18M90 72h-18M488 50v-18M510 72h18M112 394v18M90 372h-18M488 394v18M510 372h18"/>
+          </g>
+          <!-- registration marks -->
+          <g class="reg" stroke="#1A1917" stroke-width=".8" fill="none">
+            <circle cx="300" cy="34" r="8"/><path d="M288 34h24M300 22v24"/>
+            <circle cx="300" cy="412" r="8"/><path d="M288 412h24M300 400v24"/>
+          </g>
+          <!-- dimension: 6 in width (right page) -->
+          <g class="dim" stroke="#1E6A86" stroke-width="1" fill="#1E6A86">
+            <path class="draw" pathLength="1" d="M300 56H488"/>
+            <path d="M300 52v8M488 52v8"/>
+          </g>
+          <text class="lbl" x="394" y="50" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#1E6A86">trim 6 in</text>
+          <!-- dimension: 9 in height -->
+          <g class="dim" stroke="#1E6A86" stroke-width="1">
+            <path class="draw" pathLength="1" d="M540 72V372"/>
+            <path d="M536 72h8M536 372h8"/>
+          </g>
+          <text class="lbl" x="552" y="226" font-family="IBM Plex Mono, monospace" font-size="11" fill="#1E6A86" transform="rotate(90 552 226)" text-anchor="middle">9 in</text>
+          <!-- bleed label -->
+          <path class="draw" pathLength="1" d="M492 300 L560 330" stroke="#1E6A86" stroke-width=".8" fill="none"/>
+          <text class="lbl" x="506" y="346" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#1E6A86">bleed 0.125 in</text>
+          <!-- gutter label -->
+          <path class="draw" pathLength="1" d="M300 380 L300 398" stroke="#7B2D26" stroke-width=".8" fill="none"/>
+          <text class="lbl" x="214" y="434" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#7B2D26">gutter 0.375 in (24–150 pp)</text>
+        </svg>
+        <figcaption class="caption-mock">Live preview shows bleed, trim, and the safe area before you export.</figcaption>
+      </figure>
     </div>
 
     <section class="alt" id="problem">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="kicker">The expensive mistake</p>
           <h2>Most rejected interiors fail the ruler, not the idea.</h2>
           <p>KDP trims 0.125 in off the top, bottom, and outside edge. The inside margin grows with page count, from 0.375 in to 0.875 in. Spine width is page count times a paper-specific factor. Get any of those wrong and the file comes back.</p>
         </div>
         <div class="grid-3">
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:0">
             <span class="num">01</span>
             <h3>Gutter by page count</h3>
             <p>24–150 pages need 0.375 in inside. 151–300 need 0.5 in, and so on, up to 0.875 in. Quire sets this for you when the page count changes.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:1">
             <span class="num">02</span>
             <h3>Bleed on the outside only</h3>
             <p>A 6 × 9 in book with bleed becomes a 6.125 × 9.25 in PDF. The extra width sits on the outside edge, not in the gutter. The preview draws that zone.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:2">
             <span class="num">03</span>
             <h3>Cover wrap and spine math</h3>
             <p>The cover is one PDF: bleed, back, spine, front, bleed. Spine text is omitted at 79 pages or fewer, which is KDP’s rule, not a style choice.</p>
@@ -96,27 +136,27 @@
 
     <section id="how">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="kicker">How it works</p>
           <h2>Pick a type, watch the spread, export three files.</h2>
         </div>
         <div class="grid-4">
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:3">
             <span class="num">Step 1</span>
             <h3>Choose the book</h3>
             <p>Journal, planner, tracker, recipe book, logbook, or coloring book. Set trim, page count, paper, and theme.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:0">
             <span class="num">Step 2</span>
             <h3>Read the checklist</h3>
             <p>Quire flags odd page counts, short interiors, likely trademark terms in the title, missing spine clearance, and KDP’s weekly title cap.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:1">
             <span class="num">Step 3</span>
             <h3>Export the files</h3>
             <p>A single-page interior PDF, a full cover wrap with a barcode reserve, and a listing pack with title, bullets, keywords, and a disclosure note.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal data-glow style="--d:2">
             <span class="num">Step 4</span>
             <h3>Upload, then confirm</h3>
             <p>Always check the measurements in KDP’s own calculator. We measure carefully; Amazon’s tools remain the source of record.</p>
@@ -127,12 +167,12 @@
 
     <section class="alt" id="types">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="kicker">Ten starting layouts</p>
           <h2>Built for one good title, not a pile of junk books.</h2>
           <p>KDP now limits new titles to two creations and two first submissions per format each week. Quire is a layout studio, not a mass-upload machine.</p>
         </div>
-        <ul class="types">
+        <ul class="types" data-reveal>
           <li><a href="app.html">Lined journal</a></li>
           <li><a href="app.html">Dot-grid notebook</a></li>
           <li><a href="app.html">Graph notebook</a></li>
@@ -149,13 +189,13 @@
 
     <section id="ai">
       <div class="wrap grid-2">
-        <div>
+        <div data-reveal>
           <p class="kicker">Demo mode, clearly labeled</p>
           <h2>The public studio does not call a paid model.</h2>
           <p>Journals, planners, and ruled notebooks are laid out in the browser. Coloring pages are original procedural line drawings — mandalas, botanicals, and geometric patterns — not licensed characters and not a generative image model.</p>
           <p>If you later run the optional local server with your own API key, model-written prompts and listing copy can be added. Those must be disclosed on KDP as AI-generated text, even if you edit them afterwards.</p>
         </div>
-        <div class="card">
+        <div class="card note" data-reveal style="--d:1">
           <h3>What we remind you to do</h3>
           <p>Disclose AI-generated text, images, or translations when you publish. Review every title for trademarked names. Pace uploads to KDP’s weekly cap. Leave the barcode box empty. Confirm spine width for your paper type in KDP’s calculator.</p>
         </div>
@@ -164,13 +204,13 @@
 
     <section class="alt" id="pricing">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="kicker">Pricing</p>
           <h2>Use the studio now. Lock the founder price.</h2>
           <p>The studio is free to try in your browser. The founder year locks $99 for 12 months on a secure hosted card checkout, with a 7-day refund.</p>
         </div>
         <div class="price-grid">
-          <article class="price-card">
+          <article class="price-card" data-reveal>
             <p class="kicker">Founder pre-order</p>
             <div class="price">$99 <small>/ year</small></div>
             <p>A year’s access at a locked founder price, with a 7-day refund. Limited to early members.</p>
@@ -185,7 +225,7 @@
             </div>
             <p class="fine">Card payment runs on Stripe’s hosted checkout. Prefer to wait? The waitlist is free.</p>
           </article>
-          <article class="price-card secondary">
+          <article class="price-card secondary" data-reveal style="--d:1">
             <p class="kicker">Monthly</p>
             <div class="price">$19 <small>/ month</small></div>
             <p>Monthly access if you would rather not prepay the year. Cancel any time.</p>
@@ -202,8 +242,8 @@
 
     <section id="faq">
       <div class="wrap-narrow faq">
-        <p class="kicker">Questions</p>
-        <h2>Before you upload.</h2>
+        <p class="kicker" data-reveal>Questions</p>
+        <h2 data-reveal>Before you upload.</h2>
         <details open>
           <summary>Is this affiliated with Amazon?</summary>
           <p>No. Quire is an independent layout tool. Amazon, Kindle, and KDP are trademarks of their owners. Always confirm measurements in KDP’s own help pages and calculators. Specs used here were read from KDP Help on 26 November 2026.</p>
@@ -278,5 +318,6 @@
   <script src="js/landing.js"></script>
   <script src="../checkout-config.js"></script>
   <script src="../cta.js" data-slug="quirepress" data-bar></script>
+  <script src="../assets/motion.js"></script>
 </body>
 </html>
