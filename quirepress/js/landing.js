@@ -84,7 +84,7 @@
             (name ? "Name: " + name + "\n" : "")
             + "Email: " + email + "\n"
             + (interest ? "I make: " + interest + "\n" : "")
-            + "\nPlease add me to the Quire founder waitlist ($99/year when Whop checkout opens).\n"
+            + "\nPlease add me to the Quire founder waitlist ($99 founder year).\n"
           );
         const a = done.querySelector("[data-mailto]");
         if (a) a.href = mail;

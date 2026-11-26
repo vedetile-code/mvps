@@ -39,7 +39,7 @@
           <a class="btn" href="app.html">Try the free studio</a>
           <a class="btn ghost" href="#waitlist" data-open-waitlist>Founder pre-order waitlist</a>
         </div>
-        <p class="fine">The studio runs in your browser, including this public demo. No account required. Checkout, when it opens, will be through Whop — a route that can pay out to Bermuda. Quire is not affiliated with Amazon.</p>
+        <p class="fine">The studio runs in your browser, including this public demo. No account required. Founder pricing is open now. Quire is not affiliated with Amazon.</p>
       </div>
       <div class="spread-mock" aria-hidden="true">
         <div class="gutter-tag">gutter</div>
@@ -166,14 +166,14 @@
       <div class="wrap">
         <div class="section-head">
           <p class="kicker">Pricing</p>
-          <h2>Use the studio now. Pay later through Whop.</h2>
-          <p>Stripe is not available in Bermuda, and this product is software, not a human service. When paid checkout opens it will be on Whop, with Paddle or Dodo Payments as backups, and PayPal as an invoice fallback.</p>
+          <h2>Use the studio now. Lock the founder price.</h2>
+          <p>The studio is free to try in your browser. The founder year locks $99 for 12 months on a secure hosted card checkout, with a 7-day refund.</p>
         </div>
         <div class="price-grid">
           <article class="price-card">
             <p class="kicker">Founder pre-order</p>
             <div class="price">$99 <small>/ year</small></div>
-            <p>A year’s access at a locked founder price, billed when Whop checkout is approved. Limited to early waitlist members.</p>
+            <p>A year’s access at a locked founder price, with a 7-day refund. Limited to early members.</p>
             <ul>
               <li>Everything in the studio, without the demo footer on exports</li>
               <li>Optional AI prompts and listing copy, using your own key or the hosted path once it exists</li>
@@ -181,14 +181,14 @@
               <li>7-day refund after the first paid charge</li>
             </ul>
             <div class="btn-row">
-              <a class="btn" href="#waitlist" data-open-waitlist>Join the founder waitlist</a>
+              <a class="btn" href="#waitlist" data-open-waitlist data-checkout="primary" data-buy-label="Buy founder year — $99">Join the founder waitlist</a>
             </div>
             <p class="fine">No payment is taken on this site. A waitlist request is not a charge.</p>
           </article>
           <article class="price-card secondary">
             <p class="kicker">After launch</p>
             <div class="price">$19 <small>/ month</small></div>
-            <p>Monthly access if you would rather not prepay the year. Cancel any time from the Whop customer portal.</p>
+            <p>Monthly access if you would rather not prepay the year. Cancel any time.</p>
             <ul>
               <li>Same studio and file exports</li>
               <li>The public demo remains available for one-off tests</li>
@@ -217,8 +217,8 @@
           <p>Not each week. KDP limits new titles to two creations and two first submissions per format per week, resetting Sunday at 00:00 UTC. See <a href="https://kdp.amazon.com/en_US/help/topic/G202172740">Create a Book</a>. This tool will not bypass that cap.</p>
         </details>
         <details>
-          <summary>How do payments work from Bermuda?</summary>
-          <p>Paid plans will be sold as software through Whop first. Paddle and Dodo Payments are backups for software only. PayPal Business can invoice if needed. We will not open an Etsy shop or a Stripe account from Bermuda, because those routes are not available there.</p>
+          <summary>How do payments work?</summary>
+          <p>By card on a secure hosted checkout page (Stripe). PayPal invoices are available on request. This site never sees your card.</p>
         </details>
         <details>
           <summary>Who is this for?</summary>
@@ -245,7 +245,7 @@
   <div class="modal" id="waitlist-modal" hidden aria-hidden="true" role="dialog" aria-labelledby="wl-title">
     <div class="modal-card">
       <h2 id="wl-title">Founder waitlist</h2>
-      <p>Reserve the $99/year founder price. We will not charge you on this page. When Whop checkout is ready, we will reply from <a data-contact href="mailto:timwvedco+quirepress@gmail.com">timwvedco+quirepress@gmail.com</a>.</p>
+      <p>Reserve the $99/year founder price. We will not charge you on this page. Pay now with the button, or reserve and we will reply with a checkout link from <a data-contact href="mailto:timwvedco+quirepress@gmail.com">timwvedco+quirepress@gmail.com</a>.</p>
       <form id="waitlist-form">
         <label for="wl-name">Name</label>
         <input id="wl-name" name="name" type="text" autocomplete="name">
@@ -261,10 +261,10 @@
         </select>
         <p class="field-error" id="wl-error" hidden></p>
         <div class="modal-actions">
-          <button class="btn" type="submit">Save my request</button>
+          <button class="btn" type="submit">Email my request</button>
           <button class="btn ghost" type="button" data-close-waitlist>Close</button>
         </div>
-        <p class="fine">This demo stores the request on this device only. To reach us for sure, send the follow-up email on the next screen. We do not sell addresses.</p>
+        <p class="fine">Pressing the button opens a ready-to-send email to the founder inbox. We do not sell addresses.</p>
       </form>
       <div id="wl-done" hidden>
         <p><strong>Saved on this device.</strong> This public demo cannot send mail. To join the real waitlist, send a short email from your address.</p>
@@ -276,5 +276,7 @@
     </div>
   </div>
   <script src="js/landing.js"></script>
+  <script src="../checkout-config.js"></script>
+  <script src="../cta.js" data-slug="quirepress" data-bar></script>
 </body>
 </html>

@@ -73,7 +73,7 @@
       <p class="section-kicker">How it works</p>
       <h2>AI drafts. A person signs off.</h2>
       <div class="steps">
-        <div class="step"><div class="num">01</div><div><h3>You pay through Fiverr or PayPal</h3><p>Stripe and Etsy are not used. The operator is in Bermuda; Fiverr (payout to PayPal) and PayPal Business are the payment routes for this human-reviewed service.</p></div></div>
+        <div class="step"><div class="num">01</div><div><h3>You pay by card, PayPal, or Fiverr</h3><p>Pick a pack and pay on a secure checkout page, or ask for a PayPal invoice. Work starts once payment clears.</p></div></div>
         <div class="step"><div class="num">02</div><div><h3>You send a resume, the posting, and an intake</h3><p>The intake collects achievements with numbers, licenses, and anything you do not want claimed. That last list is as important as the first.</p></div></div>
         <div class="step"><div class="num">03</div><div><h3>Software extracts requirements and drafts from your facts</h3><p>Requirements are mapped as supported, partial, or gap. The draft cannot add a certification, employer, or metric that is not in your inputs.</p></div></div>
         <div class="step"><div class="num">04</div><div><h3>A human review checklist has to pass</h3><p>Twenty to forty minutes of review. Automated fact flags are fixed first. The pack is not delivered until the reviewer signs off.</p></div></div>
@@ -94,9 +94,9 @@
             <li>Tailored resume and cover letter</li>
             <li>Human review checklist</li>
             <li>48-hour delivery</li>
-            <li>PayPal invoice</li>
+            <li>Card or PayPal invoice</li>
           </ul>
-          <a class="btn ghost" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2419%20pilot%20request">Request a pilot invoice</a>
+          <a class="btn ghost" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2419%20pilot%20request" data-checkout="primary" data-buy-label="Pay $19 — claim a pilot slot">Request a pilot invoice</a>
         </article>
         <article class="price featured">
           <div class="name">Application pack</div>
@@ -106,9 +106,9 @@
             <li>30 likely interview questions, tailored to the posting</li>
             <li>Talking points limited to your facts</li>
             <li>48-hour delivery</li>
-            <li>Fiverr or PayPal</li>
+            <li>Card, PayPal, or Fiverr</li>
           </ul>
-          <a class="btn" href="#order">Order the $49 pack</a>
+          <a class="btn" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2449%20Application%20pack" data-checkout="application" data-buy-label="Pay $49 — Application pack">Order the $49 pack</a>
         </article>
         <article class="price">
           <div class="name">Interview pack</div>
@@ -118,16 +118,16 @@
             <li>8-question scored mock interview</li>
             <li>Suggested answers and a self-score rubric</li>
             <li>LinkedIn headline and About draft</li>
-            <li>Fiverr or PayPal</li>
+            <li>Card, PayPal, or Fiverr</li>
           </ul>
-          <a class="btn ghost" href="#order">Order the $99 pack</a>
+          <a class="btn ghost" href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20%2499%20Interview%20pack" data-checkout="interview" data-buy-label="Pay $99 — Interview pack">Order the $99 pack</a>
         </article>
       </div>
     </section>
 
     <section class="wrap" id="order">
       <p class="section-kicker">How to pay</p>
-      <h2>Fiverr or PayPal only.</h2>
+      <h2>Card, PayPal, or Fiverr.</h2>
       <div class="cards">
         <article class="card">
           <h3>Fiverr</h3>
@@ -138,8 +138,8 @@
           <p>Used for the $19 pilot and as a backup for the packs. Email <a href="mailto:timwvedco+shiftready@gmail.com">timwvedco+shiftready@gmail.com</a> with the pack you want, and you will receive an invoice before work starts. No card details are collected on this site.</p>
         </article>
         <article class="card">
-          <h3>What is not offered</h3>
-          <p>No Stripe checkout and no Etsy listing. Those routes are not available for this seller in Bermuda. Paddle and Dodo are not used because this is a human-labour service, not software checkout.</p>
+          <h3>Card checkout</h3>
+          <p>Card payments use a secure hosted checkout (Stripe); the buttons above open it when available. This site never sees your card.</p>
         </article>
       </div>
       <p class="hero-note">Questions, waitlist, or a paid order: <a href="mailto:timwvedco+shiftready@gmail.com?subject=ShiftReady%20inquiry">timwvedco+shiftready@gmail.com</a>. Do not send your resume in a first message if you are only asking a question; wait for the invoice or Fiverr order instructions.</p>
@@ -178,5 +178,7 @@
       </div>
     </div>
   </footer>
+  <script src="../checkout-config.js"></script>
+  <script src="../cta.js" data-slug="shiftready" data-bar></script>
 </body>
 </html>

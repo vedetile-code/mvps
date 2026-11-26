@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="banner">This public site runs in <strong>demo mode</strong>. Scoring uses an on-device rubric. A local <code>OPENAI_API_KEY</code> is needed for AI scoring and is never committed or used here. Checkout is not live — the form below is a waitlist only.</div>
+  <div class="banner">This public site runs in <strong>demo mode</strong>. Scoring uses an on-device rubric. A local <code>OPENAI_API_KEY</code> is needed for AI scoring and is never committed or used here. Pilot places: reserve below.</div>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="index.html">
@@ -54,7 +54,7 @@
     <div class="stats">
       <div class="stat"><b>1.96 million</b><span>car practical tests in Great Britain in FY 2024–25 (DVSA annual report)</span></div>
       <div class="stat"><b>Two questions</b><span>one ‘tell me’ before you drive, one ‘show me’ while you drive. A wrong answer is a driving fault; a dangerous show-me is a fail.</span></div>
-      <div class="stat"><b>£19 · 30 days</b><span>No auto-renew. Pilot pre-order listed at £9. Payments, when live, via Whop, Paddle, Dodo or PayPal.</span></div>
+      <div class="stat"><b>£19 · 30 days</b><span>No auto-renew. Pilot pre-order listed at £9. Secure card checkout.</span></div>
     </div>
 
     <section id="how">
@@ -108,10 +108,10 @@
             <li>Unlimited practice of all 14 tell-me questions and 7 show-me prompts</li>
             <li>Follow-ups on thin answers and a written debrief with official references</li>
             <li>No auto-renew — a 30-day pass, then it ends</li>
-            <li>Refund: email within 7 days of a paid purchase for a full refund, once checkout is live</li>
+            <li>Refund: email within 7 days of purchase for a full refund</li>
           </ul>
-          <p class="fine">Checkout is not live on this page. Payment, when offered, will be through Whop, Paddle, Dodo or PayPal, which can pay out to a Bermuda seller. Stripe and Etsy are not used.</p>
-          <a class="btn btn-amber" href="#waitlist">Join the pilot waitlist</a>
+          <p class="fine">Payment is on a secure hosted card page; this site never sees your card.</p>
+          <a class="btn btn-amber" href="#waitlist" data-checkout="primary" data-buy-label="Get the £9 pilot pass">Join the pilot waitlist</a>
         </div>
       </div>
     </section>
@@ -120,7 +120,7 @@
       <h2>Pilot / pre-order waitlist</h2>
       <div class="grid-2">
         <div class="card">
-          <p class="form-note"><strong>Placeholder form — nothing is sent and nothing is charged.</strong> Your entry is stored in this browser only (localStorage). It does not create an account, take a card, or email anyone. To reach the maker, write to <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>.</p>
+          <p class="form-note"><strong>Nothing is charged here.</strong> Pressing the button opens a ready-to-send email reserving your place; we reply with your pass link. To reach the maker, write to <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>.</p>
           <form class="waitlist" id="waitlist-form">
             <label>Name
               <input name="name" type="text" autocomplete="name" required placeholder="Your name">
@@ -141,7 +141,7 @@
             <label>Anything we should know (optional)
               <textarea name="note" placeholder="Test centre, first language, or a question"></textarea>
             </label>
-            <button class="btn btn-primary" type="submit">Save my interest on this device</button>
+            <button class="btn btn-primary" type="submit">Email my pilot request</button>
             <p id="waitlist-status" class="fine" role="status"></p>
           </form>
         </div>
@@ -177,10 +177,12 @@
 
     <footer>
       <p>TellMe Coach is a self-study practice tool. Always check the current official publication before your test: <a href="https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-questions/car-show-me-tell-me-vehicle-safety-questions">GOV.UK show me, tell me questions</a>. Contains public sector information licensed under the Open Government Licence v3.0.</p>
-      <p>Contact: <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>. Payments, when offered, will use Whop, Paddle, Dodo or PayPal (routes that can pay out to Bermuda). Stripe and Etsy are not used.</p>
+      <p>Contact: <a href="mailto:timwvedco+tellmecoach@gmail.com">timwvedco+tellmecoach@gmail.com</a>. Payments use a secure hosted card checkout.</p>
       <p>© 2026 TellMe Coach. All product copy on this site, other than official quotations, is independent of DVSA.</p>
     </footer>
   </div>
   <script src="js/landing.js"></script>
+  <script src="../checkout-config.js"></script>
+  <script src="../cta.js" data-slug="tellme-coach" data-bar></script>
 </body>
 </html>

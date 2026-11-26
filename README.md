@@ -10,4 +10,4 @@ Static, demo-only previews of five consumer tools. Live at [https://vedetile-cod
 | [Quire](https://vedetile-code.github.io/mvps/quirepress/) | `quirepress/` | KDP interior and cover layout studio |
 | [ShiftReady](https://vedetile-code.github.io/mvps/shiftready/) | `shiftready/` | Human-checked RN application pack |
 
-The public pages run in demo mode. They do not require or store API keys, and they do not take payment.
+The public pages run in demo mode and never store API keys or card details. Checkout links (Stripe Payment Links or PayPal) are set in one place, `checkout-config.js`; an empty link falls back to an email reservation. After payment, buyers land on `thanks.html?p=<slug>`.

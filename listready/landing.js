@@ -16,7 +16,7 @@
       "Reply-to: " + email,
       "Marketplaces I sell on: " + (platforms || "(not specified)"),
       "",
-      "I understand this is interest only — no payment is being taken yet, and checkout will use Whop, Paddle, Dodo, or PayPal when it opens."
+      "I understand this is interest only — no payment is taken until I use the checkout link you send."
     ].join("\n");
     var mailto =
       "mailto:timwvedco+listready@gmail.com?subject=" +

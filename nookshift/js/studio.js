@@ -383,7 +383,7 @@
     const body = encodeURIComponent(
       "Please add me to the Nookshift founding waitlist.\n\nName: " +
       name + "\nReply email: " + email + "\nI want this for: " + interest +
-      "\n\nI understand checkout will open through Whop, Paddle or Dodo (processors that can pay a Bermuda seller), and that no payment is taken until I complete checkout."
+      "\n\nI understand no payment is taken until I complete the secure checkout link you send."
     );
     return "mailto:" + CONTACT + "?subject=" + subject + "&body=" + body;
   }

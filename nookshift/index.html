@@ -33,7 +33,7 @@
           <a class="btn" href="app.html">Open the free studio</a>
           <a class="btn btn-ghost" href="#waitlist">Join the founding waitlist</a>
         </div>
-        <p class="fine">The public demo runs in your browser. Your photo is not uploaded. Founding plans will check out through Whop, Paddle or Dodo — processors that can pay a Bermuda seller.</p>
+        <p class="fine">The public demo runs in your browser. Your photo is not uploaded. Founding plans use secure card checkout; reserve by email until it opens.</p>
       </div>
       <div class="stage-card">
         <div class="compare" id="hero-compare">
@@ -91,8 +91,8 @@
 
     <section class="wrap" id="pricing">
       <div class="section-head">
-        <h2>Simple prices, checkout that works from Bermuda</h2>
-        <p>Stripe is not available to a Bermuda seller, and this is software, not a human service. Paid plans will be sold through Whop, Paddle or Dodo once those accounts are approved. Nothing is charged until you complete that checkout. Comparable room-restyle apps list from about $9.99 a month to $49.99 a year.</p>
+        <h2>Simple prices, honest scope</h2>
+        <p>Use the browser demo free today. The founding year is $29 with a 7-day no-questions refund; founding members also get their first AI restyles done for them by email while the in-app AI path is finished. Comparable room-restyle apps list from about $9.99 a month to $49.99 a year.</p>
       </div>
       <div class="price-grid">
         <article class="price-card">
@@ -118,7 +118,7 @@
             <li>7-day refund after purchase, no questions asked</li>
             <li>No auto-renew at the founding rate without a clear reminder</li>
           </ul>
-          <a class="btn btn-clay" href="#waitlist">Email my place in line</a>
+          <a class="btn btn-clay" href="#waitlist" data-checkout="primary" data-buy-label="Buy the founding year — $29">Email my place in line</a>
         </article>
         <article class="price-card">
           <div class="tag">After launch</div>
@@ -128,7 +128,7 @@
             <li>40 AI restyles a month</li>
             <li>Same studio, standard rate</li>
             <li>Cancel any time on the monthly plan</li>
-            <li>Checkout via Whop, Paddle or Dodo</li>
+            <li>Secure card checkout</li>
           </ul>
           <a class="btn btn-ghost" href="#waitlist">Get launch notice</a>
         </article>
@@ -172,8 +172,8 @@
           <p>No. The live demo grades color, light and mood. It does not replace sofas or plants. That honesty is intentional: you can test the workflow on your photo today without uploading it. Full AI restyles need an API key in the local server, or a founding pass once checkout is live.</p>
         </details>
         <details>
-          <summary>How do I pay if I live in, or the seller is in, Bermuda?</summary>
-          <p>Paid software will go through Whop, Paddle or Dodo. Stripe is not offered in Bermuda, and Etsy shops cannot be opened from there. Human-labour marketplaces are not used for this product. Checkout links will be added only after those merchant accounts are approved. This page does not charge a card.</p>
+          <summary>How do I pay?</summary>
+          <p>By card through a secure hosted checkout (the Buy button opens it). Until checkout is switched on, the waitlist form reserves the founding price by email and we reply with a payment link. This page never sees your card.</p>
         </details>
         <details>
           <summary>Should I trust a restyle when I buy paint or furniture?</summary>
@@ -206,5 +206,7 @@
   </footer>
   <script src="js/studio.js"></script>
   <script src="js/landing.js"></script>
+  <script src="../checkout-config.js"></script>
+  <script src="../cta.js" data-slug="nookshift" data-bar></script>
 </body>
 </html>

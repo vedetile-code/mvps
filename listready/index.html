@@ -33,7 +33,7 @@
           <a class="btn" href="app/">Try three sample items</a>
           <a class="btn btn-ghost" href="#preorder">Reserve founding pricing</a>
         </div>
-        <p class="fine">This public demo runs in demo mode. It does not log into marketplaces, post, relist, or charge a card. Checkout, when it opens, will go through Whop, Paddle, Dodo, or PayPal — not Stripe or Etsy.</p>
+        <p class="fine">This public demo runs in demo mode. It does not log into marketplaces, post, relist, or charge a card. Founding pre-orders are open: reserve below.</p>
       </div>
       <aside class="ticket" aria-label="Example draft ticket">
         <div class="ticket-head">
@@ -128,6 +128,7 @@
             <li>Suggested price range and a manual sold-comps checklist</li>
             <li>You paste; the tool never posts</li>
           </ul>
+          <p class="mvps-buy-row"><a class="btn btn-ticket" href="#waitlist-form" data-checkout="primary" data-buy-label="Start founding plan — $9/month">Reserve the $9 founding rate ↓</a> <a class="btn" href="#waitlist-form" data-checkout="year" data-buy-label="Or pay $99 for the founding year">Or $99 founding year ↓</a></p>
           <form class="form" id="waitlist-form">
             <div class="form-row">
               <div>
@@ -144,7 +145,7 @@
               <input id="platforms" name="platforms" type="text" placeholder="e.g. Vinted, eBay, Mercari" />
             </div>
             <button class="btn btn-ticket" type="submit">Email my pre-order interest</button>
-            <p class="form-note">Opens your email app addressed to <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a>. We do not collect cards here, and this demo does not store your message on a server. Checkout will use Whop, Paddle, Dodo, or PayPal Business — routes that can work for a Bermuda-based seller. Stripe and Etsy are not used.</p>
+            <p class="form-note">Opens your email app addressed to <a href="mailto:timwvedco+listready@gmail.com">timwvedco+listready@gmail.com</a>. We do not collect cards here, and this demo does not store your message on a server. Checkout is a secure hosted card page; this site never sees your card.</p>
           </form>
           <div class="success" id="waitlist-done" hidden>
             If your email app opened, send that message to complete your interest note. You can also write directly to <strong>timwvedco+listready@gmail.com</strong> with the subject “ListReady pre-order interest.”
@@ -154,8 +155,8 @@
           <p class="eyebrow">Regular price, after founding</p>
           <div class="price">$15 <span>/ month</span></div>
           <p>or $144 a year ($12 / month). Cancel anytime once billing is live. Refunds: request within 7 days of a paid period if the drafts are not useful.</p>
-          <h3>Payments from Bermuda</h3>
-          <p>Software checkout is planned through Whop first, then Paddle or Dodo, with PayPal Business as a backup for invoices. Stripe is not offered in Bermuda. An Etsy shop cannot be opened from Bermuda. Whop’s full payout-country list still needs confirming before the first charge.</p>
+          <h3>How payment works</h3>
+          <p>Card checkout on a secure hosted page (Stripe), with PayPal invoices available on request. Founding members can also email photos of their first items and get drafts back within 24 hours.</p>
         </article>
       </div>
     </div>
@@ -204,7 +205,7 @@
       </div>
       <div>
         <strong>Payments</strong>
-        <p>Planned: Whop, Paddle, Dodo, or PayPal. Not Stripe. Not Etsy. No charges on this demo.</p>
+        <p>Secure hosted card checkout. No charges inside the demo.</p>
       </div>
     </div>
     <div class="wrap disclaimer">
@@ -212,5 +213,7 @@
     </div>
   </footer>
   <script src="landing.js"></script>
+  <script src="../checkout-config.js"></script>
+  <script src="../cta.js" data-slug="listready" data-bar></script>
 </body>
 </html>

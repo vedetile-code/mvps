@@ -35,7 +35,7 @@
       form.reset();
       status.innerHTML =
         "Saved on this device only. This is not a paid pre-order and nothing was charged. " +
-        "When checkout is live (Whop, Paddle, Dodo or PayPal — not Stripe or Etsy), we will use the address you typed if you later send it to " +
+        "We will use the address you typed if you later send it to " +
         "<a href=\"mailto:timwvedco+tellmecoach@gmail.com\">timwvedco+tellmecoach@gmail.com</a>. " +
         "You can also email that address now if you want to be on the launch list off this browser.";
     });
