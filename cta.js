@@ -35,6 +35,24 @@
       }
     });
 
+    // 1b. Honest launch-week promo line, once per buy-button group. Stripe URLs unchanged.
+    var launchLine = "Launch week: code LAUNCH50 for 50% off until 30 Nov";
+    var groups = [];
+    Array.prototype.forEach.call(document.querySelectorAll("[data-checkout]"), function (el) {
+      var host = el.parentNode;
+      var many = host && host.querySelectorAll("[data-checkout]").length > 1;
+      var target = many ? host : el;
+      if (groups.indexOf(target) === -1) groups.push(target);
+    });
+    groups.forEach(function (target) {
+      var after = target.nextElementSibling;
+      if (after && after.classList && after.classList.contains("launch50-note")) return;
+      var note = document.createElement("p");
+      note.className = "launch50-note";
+      note.textContent = launchLine;
+      if (target.parentNode) target.parentNode.insertBefore(note, target.nextSibling);
+    });
+
     // 2. Sticky CTA bar (landing pages only)
     if (me.hasAttribute("data-bar") && !sessionStorage.getItem("mvps-bar-closed-" + slug)) {
       var bar = document.createElement("div");
@@ -44,7 +62,8 @@
       var buy = links.primary;
       bar.innerHTML =
         '<span class="mvps-cta-text"><strong>' + p.name + "</strong> · " + p.offer +
-        (buy ? " · secure card checkout" : " · reserve now, pay when you get the link") + "</span>" +
+        (buy ? " · secure card checkout" : " · reserve now, pay when you get the link") +
+        " · Launch week: code LAUNCH50 for 50% off until 30 Nov</span>" +
         '<a class="mvps-cta-btn" href="' + (buy || reserveHref) + '">' + (buy ? "Buy now" : "Reserve my spot") + "</a>" +
         '<button class="mvps-cta-x" type="button" aria-label="Close">×</button>';
       document.body.appendChild(bar);
@@ -104,7 +123,8 @@
     ".mvps-cta-btn:hover{background:#ffe27f}" +
     ".mvps-cta-x{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:0;color:#bbb;font-size:22px;cursor:pointer}" +
     "body.mvps-has-bar{padding-bottom:64px}" +
-    ".mvps-status{margin-top:10px;font-size:.95em}";
+    ".mvps-status{margin-top:10px;font-size:.95em}" +
+    ".launch50-note{margin:.6em 0 0;font-size:.88em;line-height:1.45;max-width:36em}";
   document.head.appendChild(css);
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", apply); else apply();
