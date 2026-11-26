@@ -97,7 +97,7 @@
   }
 
   async function tryHealth() {
-    if (location.hostname.endsWith("github.io")) {
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) {
       setMode("demo");
       return;
     }

@@ -389,7 +389,7 @@
   }
 
   function detectMode(health) {
-    if (location.hostname.endsWith("github.io")) return "demo";
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) return "demo";
     if (health && health.mode === "ai") return "ai";
     return "demo";
   }

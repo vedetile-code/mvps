@@ -22,6 +22,7 @@
   }
 
   async function detectApi() {
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) return false;
     try {
       const r = await fetch("/api/health", { cache: "no-store" });
       if (!r.ok) return false;

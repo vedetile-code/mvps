@@ -1,5 +1,5 @@
 /* Shared conversion layer: checkout links, sticky CTA, and waitlist capture.
- * Config lives in /mvps/checkout-config.js. Include with:
+ * Config lives in /checkout-config.js. Include with:
  *   <script src="../checkout-config.js"></script>
  *   <script src="../cta.js" data-slug="nookshift"></script>
  */

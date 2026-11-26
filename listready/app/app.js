@@ -37,6 +37,12 @@
   }
 
   async function checkAi() {
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) {
+      state.aiAvailable = false;
+      setBanner();
+      note("No API key on this host. Sample items use prepared drafts. Your own photos will get a notes-only draft until you run the local server with OPENAI_API_KEY.");
+      return;
+    }
     try {
       var r = await fetch("/api/health", { headers: { Accept: "application/json" } });
       if (!r.ok) throw new Error("no health");

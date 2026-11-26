@@ -5,6 +5,9 @@
   const CONTACT = "timwvedco+quirepress@gmail.com";
 
   async function status() {
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) {
+      return { demo: true, reason: "no-server" };
+    }
     try {
       const r = await fetch("/api/status", { headers: { Accept: "application/json" } });
       if (!r.ok) return { demo: true, reason: "no-server" };

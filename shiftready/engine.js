@@ -220,6 +220,9 @@
     return res.json();
   }
   async function status() {
+    if (location.hostname.endsWith("github.io") || location.hostname.endsWith("pages.dev")) {
+      return { mode: "demo", api_key_present: false, local_api: false };
+    }
     try {
       const res = await fetch("/api/status");
       if (!res.ok) return { mode: "demo", api_key_present: false, local_api: false };

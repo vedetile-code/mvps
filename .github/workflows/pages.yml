@@ -1,5 +1,9 @@
 name: Deploy GitHub Pages
 
+# GitHub Pages now only serves lightweight redirects to https://mvps.pages.dev
+# so existing outreach links keep working. The site source stays on main and
+# is published to Cloudflare Pages.
+
 on:
   push:
     branches: [main]
@@ -27,9 +31,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh api --method POST "/repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow || true
+      - name: Build redirect pages
+        run: python3 .github/scripts/build-github-redirects.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: redirects-out
       - id: deployment
         uses: actions/deploy-pages@v4
