@@ -15,7 +15,7 @@ window.MVPS_CHECKOUT = {
       contact: "timwvedco+nookshift@gmail.com",
       offer: "Founding year $29",
       links: {
-        primary: ""          // Stripe: Nookshift Founding Year, $29 one-time
+        primary: "https://buy.stripe.com/6oU28s2Mia5Nd6kc4IbV600" // Stripe: Nookshift Founding Year, $29 one-time
       }
     },
     listready: {
@@ -23,8 +23,8 @@ window.MVPS_CHECKOUT = {
       contact: "timwvedco+listready@gmail.com",
       offer: "Founding $9/month",
       links: {
-        primary: "",         // Stripe: ListReady Founding Monthly, $9/month
-        year: ""             // Stripe: ListReady Founding Year, $99 one-time
+        primary: "https://buy.stripe.com/aFa5kEev03Hp1nC9WAbV601", // Stripe: ListReady Founding Monthly, $9/month
+        year: "https://buy.stripe.com/5kQ14o72y7XFd6k4CgbV602" // Stripe: ListReady Founding Year, $99 one-time
       }
     },
     "tellme-coach": {
@@ -32,7 +32,7 @@ window.MVPS_CHECKOUT = {
       contact: "timwvedco+tellmecoach@gmail.com",
       offer: "£9 pilot 30-day pass",
       links: {
-        primary: ""          // Stripe: TellMe Coach 30-Day Pass (Pilot), £9 one-time
+        primary: "https://buy.stripe.com/6oU3cw9aGcdVc2g6KobV603" // Stripe: TellMe Coach 30-Day Pass (Pilot), £9 one-time
       }
     },
     quirepress: {
@@ -40,8 +40,8 @@ window.MVPS_CHECKOUT = {
       contact: "timwvedco+quirepress@gmail.com",
       offer: "Founder year $99",
       links: {
-        primary: "",         // Stripe: Quire Founder Year, $99 one-time
-        monthly: ""          // Stripe: Quire Monthly, $19/month
+        primary: "https://buy.stripe.com/aFa9AUev02Dlc2g6KobV604", // Stripe: Quire Founder Year, $99 one-time
+        monthly: "https://buy.stripe.com/7sYeVe5Yufq7fesb0EbV605" // Stripe: Quire Monthly, $19/month
       }
     },
     shiftready: {
@@ -49,9 +49,9 @@ window.MVPS_CHECKOUT = {
       contact: "timwvedco+shiftready@gmail.com",
       offer: "$19 pilot (5 slots)",
       links: {
-        primary: "",         // Stripe or PayPal: ShiftReady Pilot, $19
-        application: "",     // Stripe or PayPal: ShiftReady Application Pack, $49
-        interview: ""        // Stripe or PayPal: ShiftReady Interview Pack, $99
+        primary: "https://buy.stripe.com/9B66oIev0cdV7M07OsbV606", // Stripe: ShiftReady Pilot, $19
+        application: "https://buy.stripe.com/eVq14obiOcdV3vKfgUbV607", // Stripe: ShiftReady Standard Application Pack, $49
+        interview: "https://buy.stripe.com/cNi14o3Qm7XF9U82u8bV608" // Stripe: ShiftReady Plus Interview Pack, $99
       }
     }
   }
